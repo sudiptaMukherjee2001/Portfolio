@@ -17,7 +17,16 @@ export const CustomBox=styled('div')(({
     ColumnGap,
     maxHeight,
     minHeight,
-    mb
+    mb,
+    fontSize,
+    gradientLineWidth,
+    maxWidth,
+    paraGap,
+    paddingInline,
+    paddingBlock,
+    backdropFilter,
+    color,
+    boxShadow
 
 })=>({
     width:Width,               // match image width
@@ -35,11 +44,24 @@ export const CustomBox=styled('div')(({
   maxHeight:maxHeight,
   minHeight:minHeight,
   marginBottom:mb,
+  paddingInline:paddingInline,
+  paddingBlock:paddingBlock,
+  backdropFilter:backdropFilter,
+  color:color,
+  boxShadow:boxShadow,
+  transition: `${boxShadow} 5s ease-in`,
+  cursor: 'pointer',
+
+  "&:hover": {
+    boxShadow: boxShadow ? theme.shadows.lightHover:"", // Use a predefined shadow or create a custom one
+  },
+
+  
 "& .img":{
     opacity:"0.7"
 },
 "& .typography-main":{
-  fontSize:theme.fonts.sizes['7xl'],
+  fontSize:theme.fonts.sizes[fontSize],
   fontWeight:theme.fonts.weights.bold,
   background:theme.gradients.text.heading,
   backgroundClip: 'text',
@@ -52,15 +74,16 @@ export const CustomBox=styled('div')(({
   left: '0px',
   bottom: '-21px',    
   height: '4px',
-  width: '20%',
+  width: gradientLineWidth,
   background: theme.gradients.decorative.line,
   borderRadius: '2px'
   }
 },
 "& .typography-sub":{
-  fontSize:theme.fonts.sizes['2xl'],
   color: theme.colors.text.blue[10080],
-  maxWidth :'764px',
+  maxWidth :maxWidth,
+  fontSize:theme.fonts.sizes[fontSize],
+  marginBottom:paraGap,
 },
     
 }))

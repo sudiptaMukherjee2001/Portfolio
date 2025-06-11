@@ -10,7 +10,7 @@ const LeftSidebar = () => {
   return (
     <CustomSection   display='flex' flexDirection='column' alignItems='center'>
       {/* Avatar part start */}
-    <CustomBox 
+    <CustomBox
       Width="200px"
        Height="200px" 
        border="2px solid #4a4a8a" 

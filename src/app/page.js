@@ -3,6 +3,7 @@
   import LeftSidebar from '@/component/leftSidebar';
 import { CustomBox } from '@/style/CustomBox.style';
 import IntroSection from '@/component/IntroSection';
+import AboutMe from '@/component/aboutMe';
 
   const page = () => {
     return (
@@ -24,23 +25,20 @@ import IntroSection from '@/component/IntroSection';
         <Grid 
           item 
         size={{ lg: 9 }}
-          sx={{ border: '2px solid yellow' }}
+          // sx={{ border: '2px solid yellow' }}
         >
           {/* Right side content  outer box start .. All the section should be inside this outer box*/}
           <CustomBox
-          border="2px solid red"
+          // border="2px solid red"
           maxHeight="100vh"
           minHeight="100vh"
           overflow="auto"
-
           >
             <IntroSection/>
+            <AboutMe/>
             <IntroSection/>
             <IntroSection/>
             <IntroSection/>
-            <IntroSection/>
-            
-         
           </CustomBox>
           {/* Right side content  outer box end */}
 
