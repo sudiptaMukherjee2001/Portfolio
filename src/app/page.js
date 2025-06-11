@@ -4,6 +4,7 @@
 import { CustomBox } from '@/style/CustomBox.style';
 import IntroSection from '@/component/IntroSection';
 import AboutMe from '@/component/aboutMe';
+import Project from '@/component/project';
 
   const page = () => {
     return (
@@ -36,7 +37,7 @@ import AboutMe from '@/component/aboutMe';
           >
             <IntroSection/>
             <AboutMe/>
-            <IntroSection/>
+            <Project/>
             <IntroSection/>
             <IntroSection/>
           </CustomBox>
