@@ -2,15 +2,16 @@
 import { styled } from '@mui/material/styles';
 import theme from "../utils/theme.js";
 import { Typography } from '@mui/material';
-export const CustomSec=styled('section')(({Display,justifyContent,alignItems,flexDirection,Height,Width,Border})=>({
-    width: Width,
+export const CustomSec=styled('section')(({minHeight,Display,justifyContent,alignItems,flexDirection,Height,Width,Border})=>({
+    // width: Width,
     height: Height,
     border:Border,
     display: Display,
     flexDirection: flexDirection,
     alignItems: alignItems,
     paddingBlock:"1rem",
-    // justifyContent: justifyContent,
+    justifyContent: justifyContent,
+    minHeight:minHeight,
     "& .myName": {
          position: 'relative',
         display: 'inlineBlock',

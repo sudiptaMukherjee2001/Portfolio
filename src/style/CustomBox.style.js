@@ -1,6 +1,7 @@
 'use client'; 
 import { styled } from '@mui/material/styles';
 import theme from "../utils/theme.js";
+import { Chip } from '@mui/material';
 export const CustomBox=styled('div')(({
     Width,
     Height,
@@ -13,14 +14,17 @@ export const CustomBox=styled('div')(({
     alignItems,
     padding,
     marginTop,
-    ColumnGap
+    ColumnGap,
+    maxHeight,
+    minHeight,
+    mb
 
 })=>({
     width:Width,               // match image width
   height: Height,              // match image 
   border: border,
   borderRadius:borderRadius,        
-  overflow: overflow,
+  overflow: overflow=="hidden" ? "hidden" : overflow,
   backgroundColor:backgroundColor,
   display:display,
   flexDirection:flexDirection,
@@ -28,14 +32,41 @@ export const CustomBox=styled('div')(({
   padding:padding,
   marginTop:marginTop,
   columnGap:ColumnGap,
-"&.img":{
+  maxHeight:maxHeight,
+  minHeight:minHeight,
+  marginBottom:mb,
+"& .img":{
     opacity:"0.7"
-}
+},
+"& .typography-main":{
+  fontSize:theme.fonts.sizes['7xl'],
+  fontWeight:theme.fonts.weights.bold,
+  background:theme.gradients.text.heading,
+  backgroundClip: 'text',
+  // WebkitBackgroundClip: 'text',
+  color: 'transparent',
+  position: 'relative',
+  '&::after': {
+  content: '""',
+  position: 'absolute',
+  left: '0px',
+  bottom: '-21px',    
+  height: '4px',
+  width: '20%',
+  background: theme.gradients.decorative.line,
+  borderRadius: '2px'
+  }
+},
+"& .typography-sub":{
+  fontSize:theme.fonts.sizes['2xl'],
+  color: theme.colors.text.blue[10080],
+  maxWidth :'764px',
+},
     
 }))
 
 
-export const GradientButton =styled('button')(({})=>({
+export const GradientButton =styled('button')(({width})=>({
  display: 'inline-flex',
   alignItems: 'center',
   justifyContent: 'center',
@@ -43,7 +74,7 @@ export const GradientButton =styled('button')(({})=>({
   fontSize: theme.fonts.sizes.base,
   fontWeight: theme.fonts.weights.medium,
   color: theme.colors.text.primary,
-  width: '100%',
+  width: width,
   height: '2.25rem', // same as h-9
   padding: '1.5rem 1rem', // py-6 px-4
   borderRadius: '0.5rem', // rounded-lg
@@ -60,4 +91,17 @@ export const GradientButton =styled('button')(({})=>({
     transform: 'scale(1.05)',
   },
 
+}))
+
+export const CustomChip = styled(Chip)(({})=>({
+   backgroundColor: theme.colors.orbs.blue500_10, // bg-blue-500/10
+  border: `1px solid ${theme.colors.text.blue[300]}`, // border-blue-400/20 substitute
+  backdropFilter: 'blur(8px)', // backdrop-blur-md
+  color: theme.colors.text.blue[300], // text-blue-300
+  boxShadow: theme.shadows.subtle, // glow: rgba(78, 78, 255, 0.15)
+  fontWeight: theme.fonts.weights.medium,
+  fontSize: theme.fonts.sizes.sm,
+  padding: '0 13px',
+  height: '37px',
+  borderRadius: '999px',
 }))
