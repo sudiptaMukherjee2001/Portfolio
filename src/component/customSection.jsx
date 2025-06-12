@@ -1,16 +1,16 @@
 import { CustomSec } from '@/style/customSection.style'
 import React from 'react'
 
-const CustomSection = ({children,w,b,d,fD,aI}) => {
+const CustomSection = ({children,minHeight,border,display,flexDirection,alignItems,justifyContent}) => {
   return (
     <CustomSec
    
-    Width={w}
-    // Border={b}
-    Display={d}
-    flexDirection={fD}
-    alignItems={aI}
-    // justifyContent={jC}
+    minHeight={minHeight}
+    Border={border}
+    Display={display}
+    flexDirection={flexDirection}
+    alignItems={alignItems}
+    justifyContent={justifyContent}
     >{children}</CustomSec>
   )
 }
