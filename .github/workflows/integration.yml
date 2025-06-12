@@ -3,7 +3,7 @@ name: Integration of branches and pull requests
 
 on:
   push:
-    branches: [ "rightSideContent" ]
+    branches: [ "rightSideContent-main" ]
 
 
 jobs:
@@ -31,6 +31,6 @@ jobs:
       uses: devmasx/merge-branch@v1.4.0
       with:
         type: now
-        from: rightSideContent
+        from: rightSideContent-main
         to: main
         github_token: ${{ secrets.GITHUB_TOKEN }}
