@@ -31,6 +31,6 @@ jobs:
       uses: devmasx/merge-branch@v1.4.0
       with:
         type: now
-        from: rightSideContent-main
-        to: main
+        from_branch: rightSideContent-main
+        target_branch: main
         github_token: ${{ secrets.GITHUB_TOKEN }}
