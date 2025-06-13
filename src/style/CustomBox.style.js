@@ -12,6 +12,7 @@ export const CustomBox = styled('div')(({
   display,
   flexDirection,
   alignItems,
+  justifyContent,
   flexWrap,
   padding,
   marginTop,
@@ -40,6 +41,7 @@ export const CustomBox = styled('div')(({
   display: display,
   flexDirection: flexDirection,
   alignItems: alignItems,
+  justifyContent: justifyContent,
   flexWrap: flexWrap,
   gap: gap,
   padding: padding,
@@ -98,6 +100,27 @@ export const CustomBox = styled('div')(({
     fontSize: theme.fonts.sizes['xl'],
     marginTop: '0.9rem',
     marginBottom: '0.9rem',
+  },
+  "& .job-title-typography , & .course-name-typography": {
+    color: theme.colors.text.primary,
+    fontSize: theme.fonts.sizes['lg'],
+    fontWeight: theme.fonts.weights.medium
+  },
+  "& .company-name-typography , & .institution-name-typography": {
+    color: theme.colors.text.blue[500],
+    fontSize: theme.fonts.sizes['sm'],
+    fontWeight: theme.fonts.weights.medium,
+ 
+  },
+  "& .company-duration-typography , & .course-duration-typography": {
+    color: theme.colors.text.gray[400],
+    fontSize: theme.fonts.sizes['sm'],
+    fontWeight: theme.fonts.weights.medium,
+  },
+  "& .role-details-typography , & .specilization-details-typography": {
+    color: theme.colors.text.gray[300],
+    fontSize: theme.fonts.sizes['sm'],
+    fontWeight: theme.fonts.weights.medium,
   },
 
 }))

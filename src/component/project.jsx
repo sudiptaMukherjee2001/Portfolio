@@ -16,7 +16,7 @@ const Project = () => {
             </CustomBox>
 
             {/* All Project part start here */}
-            <Grid container spacing={3} maxWidth={"98%"}>
+            <Grid container spacing={2} maxWidth="98%">
                 {
                     projects.map((project, index) => (
                         <Grid item

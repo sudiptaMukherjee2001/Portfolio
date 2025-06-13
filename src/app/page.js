@@ -5,6 +5,7 @@ import { CustomBox } from '@/style/CustomBox.style';
 import IntroSection from '@/component/IntroSection';
 import AboutMe from '@/component/aboutMe';
 import Project from '@/component/project';
+import Resume from '@/component/resume';
 
   const page = () => {
     return (
@@ -38,7 +39,7 @@ import Project from '@/component/project';
             <IntroSection/>
             <AboutMe/>
             <Project/>
-            <IntroSection/>
+            <Resume/>
             <IntroSection/>
           </CustomBox>
           {/* Right side content  outer box end */}

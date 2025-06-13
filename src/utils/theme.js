@@ -19,6 +19,7 @@ const theme = {
         200: '#7f9cf5',
         300: '#667eea',
         400: '#5a67d8',
+        500: '#60a5fa',
       },
       purple: {
         300: '#b794f4',
@@ -58,6 +59,7 @@ const theme = {
     sizes: {
       sm: '14px',
       base: '16px',
+      'lg': '18px',
       xl: '20px',
       '2xl': '24px',
       '4xl': '36px',
