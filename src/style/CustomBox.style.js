@@ -62,6 +62,7 @@ export const CustomBox = styled('div')(({
     boxShadow: boxShadow ? theme.shadows.lightHover : "", // Use a predefined shadow or create a custom one
   },
 
+  
 
   "& .img": {
     opacity: "0.7"
@@ -122,7 +123,18 @@ export const CustomBox = styled('div')(({
     fontSize: theme.fonts.sizes['sm'],
     fontWeight: theme.fonts.weights.medium,
   },
-
+// Responsive styles for larger screens
+'@media screen and (min-width: 2560px)': {
+  // 1. Introsection 
+    '&.avatarBox': {
+      width: '500px',
+      height: '500px',
+    },
+    '& .img': {
+      width: '100%',
+      height: '100%',
+    }
+  }
 }))
 
 
@@ -172,3 +184,5 @@ export const CustomChip = styled(Chip)(({padding,height,fontSize,borderradius })
   height: height? height:'37px',
   borderRadius: borderradius?borderradius:'999px',
 }))
+
+
