@@ -9,6 +9,7 @@ import Resume from '@/component/resume';
 
   const page = () => {
     return (
+      <CustomBox className='mainContainer'>
       <Grid 
         container 
        alignItems={'center'}
@@ -18,7 +19,7 @@ import Resume from '@/component/resume';
           item 
           size={{ lg: 3}}
           className='leftSidebar'
-          sx={{ border: '2px solid yellow' }}
+         // sx={{ border: '2px solid yellow' }}
         >
           <LeftSidebar />
         </Grid>
@@ -35,7 +36,7 @@ import Resume from '@/component/resume';
           maxHeight="100vh"
           minHeight="100vh"
           overflow="auto"
-          border="1px solid red"
+       //   border="1px solid red"
           >
             <IntroSection/>
             <AboutMe/>
@@ -48,6 +49,7 @@ import Resume from '@/component/resume';
         </Grid>
         {/* Right side content most outer box*/}
       </Grid>
+      </CustomBox>
     );
   };
 

@@ -49,7 +49,14 @@ export const CustomSec = styled('section')(({ minHeight, Display, justifyContent
         color: theme.colors.text.blue[10080],
         fontSize: theme.fonts.sizes['xl'],
         textAlign: "center",
+    },
+    // 2.Introsection responsive styles 
+    "& .introSection":{
+        padding: "4rem",
+        border:'1px solid green'
+     
     }
+    
 }
     
 }))

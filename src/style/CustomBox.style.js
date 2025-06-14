@@ -125,7 +125,12 @@ export const CustomBox = styled('div')(({
   },
 // Responsive styles for larger screens
 '@media screen and (min-width: 2560px)': {
-  // 1. Introsection 
+  "&.mainContainer": {
+    maxWidth: '2315px',
+    margin: '0 auto',
+    border: '7px solid blue',
+  },
+  // 1. left section responsive styles 
     '&.avatarBox': {
       width: '500px',
       height: '500px',
@@ -133,7 +138,16 @@ export const CustomBox = styled('div')(({
     '& .img': {
       width: '100%',
       height: '100%',
-    }
+    },
+  // 2. Introsection responsive styles
+  "& .introSection":{
+    width: '100%',
+    border:'4px solid red',
+    minHeight: '67vh',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'space-evenly',
+  }
   }
 }))
 
