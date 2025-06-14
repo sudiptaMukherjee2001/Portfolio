@@ -62,6 +62,7 @@ export const CustomBox = styled('div')(({
     boxShadow: boxShadow ? theme.shadows.lightHover : "", // Use a predefined shadow or create a custom one
   },
 
+  
 
   "& .img": {
     opacity: "0.7"
@@ -122,7 +123,44 @@ export const CustomBox = styled('div')(({
     fontSize: theme.fonts.sizes['sm'],
     fontWeight: theme.fonts.weights.medium,
   },
-
+// Responsive styles for larger screens
+'@media screen and (min-width: 2560px)': {
+  "&.mainContainer": {
+    maxWidth: '2315px',
+    margin: '0 auto',
+    border: '7px solid blue',
+  },
+  // 1. left section responsive styles 
+    '&.avatarBox': {
+      width: '450px',
+      height: '450px',
+    },
+    '& .img': {
+      width: '100%',
+      height: '100%',
+    },
+  // 2. Introsection responsive styles
+  "&.rightside-content-wrapper":{
+    padding: '0px',
+    border:'2px solid blue',
+    minHeight: '67vh',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'space-evenly',
+    minWidth: '90%',
+    maxWidth: '90%',
+  },
+  "&.projects-wrapper":{
+    maxWidth: '81%',
+    minWidth: '81%',
+    border: '2px solid green',
+  },
+  "&.skillBox-wrapper":{
+    maxWidth: '80%',
+    minWidth: '80%',
+    border: '2px solid green',
+  }
+  }
 }))
 
 
@@ -172,3 +210,5 @@ export const CustomChip = styled(Chip)(({padding,height,fontSize,borderradius })
   height: height? height:'37px',
   borderRadius: borderradius?borderradius:'999px',
 }))
+
+

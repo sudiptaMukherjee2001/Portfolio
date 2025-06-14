@@ -4,10 +4,12 @@ import { skills } from '../utils/skill.utils.js'
 import { CustomBox } from '@/style/CustomBox.style'
 const SkillContainer = () => {
   return (
-    <Grid container spacing={2}  maxWidth={"98%"}>
+    <CustomBox className='skillBox-wrapper'>
+
+    <Grid container spacing={2}  >
         {skills.map((skill, index) => (
             <Grid item 
-        size={{ lg: 3 }} key={index} >
+        size={{ lg: 3,xl:4 }} key={index} >
             <CustomBox
             display="flex" 
             alignItems="center"
@@ -27,6 +29,7 @@ const SkillContainer = () => {
             </Grid>
         ))}
     </Grid>
+    </CustomBox>
   )
 }
 
