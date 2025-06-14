@@ -160,7 +160,34 @@ export const CustomBox = styled('div')(({
     minWidth: '80%',
     border: '2px solid green',
   }
-  }
+  },
+  // Responsive styles for smaller screens
+  '@media screen and (max-width: 600px)': {
+    "& .leftSidebar":{
+      display: 'none',
+    },
+    "&.small-device-responsiveness":{
+     display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    "& .typography-main":{
+      paddingLeft: '1rem',
+      '&::after': {
+        content: '""',
+        width: '30%',
+        left: '1rem',
+      }
+    },
+    "& .typography-sub":{
+      // textAlign: 'center',
+      paddingLeft: '1rem',
+
+    }
+
+    
+    },
 }))
 
 
