@@ -8,7 +8,7 @@ const AboutMe = () => {
     return (
         <Grid container
             maxWidth={'98%'}
-            border={'1px solid orange'}
+            // border={'1px solid orange'}
         >
             <CustomBox className='rightside-content-wrapper'>
                 {/* Title of about me section start */}

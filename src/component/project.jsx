@@ -9,7 +9,7 @@ const Project = () => {
     return (
         <Grid container
             maxWidth={'98%'}
-            border={'1px solid orange'}
+            // border={'1px solid orange'}
         >
             <CustomBox className='rightside-content-wrapper'>
                 {/* Title of  Project section start */}
@@ -25,13 +25,13 @@ const Project = () => {
                 <Grid item size={{ lg: 12, xl: 12 }} >
                     <CustomBox className='projects-wrapper'>
                         <Grid container spacing={2} maxWidth="98%"
-                         border={"3px solid pink"}
+                        //  border={"3px solid pink"}
                          >
                             {
                                 projects.map((project, index) => (
                                     <Grid item
                                         size={{ lg: 6, xl: 6 }}
-                                        border={"2px solid red"}
+                                        // border={"2px solid red"}
                                     >
                                         <CustomBox
                                             display="flex"

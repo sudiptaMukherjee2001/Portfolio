@@ -141,6 +141,7 @@ export const CustomBox = styled('div')(({
     },
   // 2. Introsection responsive styles
   "&.rightside-content-wrapper":{
+    padding: '0px',
     border:'2px solid blue',
     minHeight: '67vh',
     display: 'flex',

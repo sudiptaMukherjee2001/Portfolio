@@ -9,7 +9,7 @@ import Link from 'next/link';
 const LeftSidebar = () => {
   return (
     <CustomSection   display='flex' flexDirection='column' alignItems='center' justifyContent="space-around" maxHeight="100vh" minHeight="100vh" 
-    border="3px solid blue"
+    // border="3px solid blue"
     >
       {/* Avatar part start */}
     <CustomBox

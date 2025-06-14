@@ -8,9 +8,9 @@ const IntroSection = () => {
     return (
         <Grid container
             maxWidth={'98%'}
-            border={'1px solid orange'}
+            // border={'1px solid orange'}
         >
-            <CustomBox className='rightside-content-wrapper'>
+            <CustomBox className='rightside-content-wrapper' paddingBlock="2rem">
 
                 <Grid item size={{ lg: 12, xl: 12 }} >
                     <CustomChip label="Frontend Developer & DevOps Engineer" variant="outlined" />

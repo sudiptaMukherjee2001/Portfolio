@@ -42,7 +42,7 @@ import Resume from '@/component/resume';
             <AboutMe/>
             <Project/>
             <Resume/>
-            <IntroSection/>
+            {/* <IntroSection/> */}
           </CustomBox>
           {/* Right side content  outer box end */}
 
