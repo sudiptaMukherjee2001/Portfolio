@@ -132,17 +132,18 @@ export const CustomBox = styled('div')(({
   },
   // 1. left section responsive styles 
     '&.avatarBox': {
-      width: '500px',
-      height: '500px',
+      width: '450px',
+      height: '450px',
     },
     '& .img': {
       width: '100%',
       height: '100%',
     },
   // 2. Introsection responsive styles
-  "& .introSection":{
-    width: '100%',
-    border:'4px solid red',
+  "&.introSection":{
+  minWidth: '90%',
+  margin: '0 auto',
+    // border:'4px solid red',
     minHeight: '67vh',
     display: 'flex',
     flexDirection: 'column',
