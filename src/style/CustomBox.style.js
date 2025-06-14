@@ -173,6 +173,7 @@ export const CustomBox = styled('div')(({
       justifyContent: 'center',
     },
     "& .typography-main":{
+       fontSize: theme.fonts.sizes["6xl"],
       paddingLeft: '1rem',
       '&::after': {
         content: '""',
@@ -183,8 +184,24 @@ export const CustomBox = styled('div')(({
     "& .typography-sub":{
       // textAlign: 'center',
       paddingLeft: '1rem',
+    },
+    "&.skillBox-wrapper":{
+      marginLeft: '0.5rem',
+      marginBottom: '1rem',
+    },
+    "&.projects-wrapper":{
+      marginLeft: '0.5rem',
+      marginBottom: '1rem',
+    },
+    "&.experience-wrapper":{
+      marginLeft: '0.5rem',
+      marginBottom: '1rem',
+    },
+    "&.education-wrapper":{
+      marginLeft: '0.5rem',
+      marginBottom: '1rem',
+    },
 
-    }
 
     
     },

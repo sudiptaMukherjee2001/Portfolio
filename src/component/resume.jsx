@@ -36,6 +36,7 @@ const Resume = () => {
                         border='1px solid rgba(74, 74, 138, 0.3)'
                         padding='20px'
                         borderRadius='8px'
+                        className='experience-wrapper'
 
                     >
                         <h2 className='job-title-typography'>Frontend Developer Intern</h2>
@@ -78,6 +79,7 @@ const Resume = () => {
                                     padding='20px'
                                     borderRadius='8px'
                                     mb="1.5rem"
+                                    className='education-wrapper'
 
                                 >
                                     <h2 className='course-name-typography'>
