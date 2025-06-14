@@ -57,13 +57,16 @@ const theme = {
   fonts: {
     family: 'Inter, system-ui, sans-serif',
     sizes: {
-      sm: '14px',
-      base: '16px',
-      'lg': '18px',
-      xl: '20px',
-      '2xl': '24px',
-      '4xl': '36px',
-      '7xl': '72px',
+        sm: '14px',
+  base: '16px',
+  lg: '18px',
+  xl: '20px',
+  '2xl': '24px',
+  '4xl': '36px',
+  '5xl': '48px',
+  '6xl': '60px',
+  '7xl': '72px',
+  '8xl': '80px',
     },
     weights: {
       medium: '500',

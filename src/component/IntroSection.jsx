@@ -10,15 +10,15 @@ const IntroSection = () => {
             maxWidth={'98%'}
             // border={'1px solid orange'}
         >
-            <CustomBox className='rightside-content-wrapper' paddingBlock="2rem">
+            <CustomBox className='rightside-content-wrapper small-device-responsiveness' paddingBlock="2rem">
 
                 <Grid item size={{ lg: 12, xl: 12 }} >
                     <CustomChip label="Frontend Developer & DevOps Engineer" variant="outlined" />
                 </Grid>
-                <Grid item size={{ lg: 12, xl: 12 }} >
+                <Grid item size={{ xs:12, lg: 12, xl: 12 }} >
 
                     <CustomBox mb={"3rem"} fontSize="7xl" gradientLineWidth="10%">
-                        <h1 className='typography-main'>
+                        <h1 className='typography-main gradient-bar'>
                             Hi, I'm Sudipta Mukherjee.
                         </h1>
                     </CustomBox>
@@ -26,7 +26,7 @@ const IntroSection = () => {
                 </Grid>
                 <Grid item size={{ lg: 12, xl: 12 }} >
 
-                    <CustomBox mb={"3rem"} fontSize="2xl" maxWidth="764px">
+                    <CustomBox mb={"3rem"} fontSize="2xl" maxWidth="764px" className='short-text'>
                         <h1 className='typography-sub'>
                             I build elegant UIs & automate DevOps workflows with a focus on performance and user experience.
                         </h1>
