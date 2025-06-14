@@ -141,14 +141,23 @@ export const CustomBox = styled('div')(({
     },
   // 2. Introsection responsive styles
   "&.rightside-content-wrapper":{
-    border:'4px solid red',
+    border:'2px solid red',
     minHeight: '67vh',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-evenly',
     minWidth: '90%',
     maxWidth: '90%',
-    margin: 'auto',
+  },
+  "&.projects-wrapper":{
+    maxWidth: '81%',
+    minWidth: '81%',
+    border: '2px solid green',
+  },
+  "&.skillBox-wrapper":{
+    maxWidth: '80%',
+    minWidth: '80%',
+    border: '2px solid green',
   }
   }
 }))
