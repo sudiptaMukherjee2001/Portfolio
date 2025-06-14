@@ -15,14 +15,14 @@ const Project = () => {
                 {/* Title of  Project section start */}
                 <Grid item size={{ lg: 12, xl: 12 }} >
                     <CustomBox mb={"2rem"} fontSize="4xl" gradientLineWidth="10%">
-                        <h1 className='typography-main'>
+                        <h1 className='typography-main gradient-bar'>
                             My Projects
                         </h1>
                     </CustomBox>
                 </Grid>
                 {/* Title of Project section end */}
                 {/* All Project part start here */}
-                <Grid item size={{ lg: 12, xl: 12 }} >
+                <Grid item size={{ xs:12,sm:12, lg: 12, xl: 12 }} >
                     <CustomBox className='projects-wrapper'>
                         <Grid container spacing={2} maxWidth="98%"
                         //  border={"3px solid pink"}
@@ -30,8 +30,8 @@ const Project = () => {
                             {
                                 projects.map((project, index) => (
                                     <Grid item
-                                        size={{ lg: 6, xl: 6 }}
-                                        // border={"2px solid red"}
+                                        size={{ sm:6, lg: 6, xl: 6 }}
+                                        
                                     >
                                         <CustomBox
                                             display="flex"

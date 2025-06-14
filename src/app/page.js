@@ -9,17 +9,19 @@ import Resume from '@/component/resume';
 
   const page = () => {
     return (
-      <CustomBox className='mainContainer'>
+      <CustomBox className='mainContainer' >
       <Grid 
         container 
        alignItems={'center'}
+       justifyContent={'center'}
+      //  border={'1px solid orange'}
       >
         {/* Left side bar start*/}
         <Grid 
           item 
-          size={{ lg: 3}}
+          size={{ md:3,lg: 3}}
           className='leftSidebar'
-         // sx={{ border: '2px solid yellow' }}
+        //  sx={{ border: '2px solid yellow' }}
         >
           <LeftSidebar />
         </Grid>
@@ -27,7 +29,7 @@ import Resume from '@/component/resume';
         {/* Right side content most outer box*/}
         <Grid 
           item 
-        size={{ lg: 9 }}
+        size={{ md:8, lg: 9 }}
           // sx={{ border: '2px solid yellow' }}
         >
           {/* Right side content  outer box start .. All the section should be inside this outer box*/}

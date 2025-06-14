@@ -10,18 +10,18 @@ const Resume = () => {
         <CustomBox className='rightside-content-wrapper'>
             <Grid container maxWidth={'98%'} spacing={2} >
 
-                <Grid item size={{ lg: 12, xl: 12 }} >
-                    <CustomBox mb={"2rem"} fontSize="4xl" gradientLineWidth="8%">
-                        <h1 className='typography-main'>
+                <Grid item size={{ xs:12, sm:12, lg: 12, xl: 12 }} >
+                    <CustomBox mb={"2rem"} fontSize="4xl" gradientLineWidth="10%">
+                        <h1 className='typography-main gradient-bar'>
                             Resume
                         </h1>
                     </CustomBox>
                 </Grid>
 
                 {/* This grid is showing my Experience start */}
-                <Grid item size={{ lg: 6, xl: 5 }}>
+                <Grid item size={{ sm:6, lg: 6, xl: 5 }} >
                     <CustomBox mb={"2rem"} fontSize="xl">
-                        <h1 className='typography-main'>
+                        <h1 className='typography-main resume-subHeading-typography'>
                             Work Experience
                         </h1>
                     </CustomBox>
@@ -57,9 +57,9 @@ const Resume = () => {
                 {/* This grid is showing my Experience end */}
 
                 {/* This grid is showing my Education start */}
-                <Grid item size={{ lg: 6, xl: 5 }}>
+                <Grid item size={{ sm:6,lg: 6, xl: 5 }}>
                     <CustomBox mb={"2rem"} fontSize="xl">
-                        <h1 className='typography-main'>
+                        <h1 className='typography-main resume-subHeading-typography'>
                             Education
                         </h1>
                     </CustomBox>

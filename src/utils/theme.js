@@ -66,6 +66,7 @@ const theme = {
   '5xl': '48px',
   '6xl': '60px',
   '7xl': '72px',
+  '8xl': '80px',
     },
     weights: {
       medium: '500',
