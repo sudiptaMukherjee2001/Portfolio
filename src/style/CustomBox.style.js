@@ -140,14 +140,15 @@ export const CustomBox = styled('div')(({
       height: '100%',
     },
   // 2. Introsection responsive styles
-  "&.introSection":{
-  minWidth: '90%',
-  margin: '0 auto',
-    // border:'4px solid red',
+  "&.rightside-content-wrapper":{
+    border:'4px solid red',
     minHeight: '67vh',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-evenly',
+    minWidth: '90%',
+    maxWidth: '90%',
+    margin: 'auto',
   }
   }
 }))
