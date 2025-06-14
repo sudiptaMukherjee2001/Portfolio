@@ -132,7 +132,7 @@ export const CustomBox = styled('div')(({
     "&.mainContainer": {
       maxWidth: '2315px',
       margin: '0 auto',
-      border: '7px solid blue',
+      // border: '7px solid blue',
     },
     // 1. left section responsive styles 
     '&.avatarBox': {
@@ -146,7 +146,7 @@ export const CustomBox = styled('div')(({
     // 2. Introsection responsive styles
     "&.rightside-content-wrapper": {
       padding: '0px',
-      border: '2px solid blue',
+      // border: '2px solid blue',
       minHeight: '67vh',
       display: 'flex',
       flexDirection: 'column',
@@ -157,12 +157,12 @@ export const CustomBox = styled('div')(({
     "&.projects-wrapper": {
       maxWidth: '81%',
       minWidth: '81%',
-      border: '2px solid green',
+      // border: '2px solid green',
     },
     "&.skillBox-wrapper": {
       maxWidth: '80%',
       minWidth: '80%',
-      border: '2px solid green',
+      // border: '2px solid green',
     }
   },
   // Responsive styles for smaller screens
