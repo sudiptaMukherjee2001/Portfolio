@@ -50,6 +50,7 @@ const ContactFrom = () => {
                             ColumnGap="0.3rem"
                             mb="0.8rem"
                             marginTop="0.8rem"
+                            
 
                         >
                             <CustomBox display="flex" alignItems="center" >

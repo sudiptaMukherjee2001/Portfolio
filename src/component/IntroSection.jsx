@@ -3,8 +3,11 @@ import CustomSection from './customSection'
 import Chip from '@mui/material/Chip';
 import { CustomBox, CustomChip, GradientButton } from '@/style/CustomBox.style';
 import { Box, Grid } from '@mui/material';
+import Link from 'next/link';
 
 const IntroSection = () => {
+    const myResume = "/Sudipta-Resume.pdf";
+
     return (
         <Grid container
             maxWidth={'98%'}
@@ -40,9 +43,11 @@ const IntroSection = () => {
                         <GradientButton>
                             See my work
                         </GradientButton>
+                            <Link href={myResume} target="_blank" >
                         <GradientButton>
                             Download CV
                         </GradientButton>
+                            </Link>
                     </CustomBox>
 
                 </Grid>

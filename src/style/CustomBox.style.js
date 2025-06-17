@@ -198,22 +198,11 @@ export const CustomBox = styled('div')(({
       // textAlign: 'center',
       paddingLeft: '1rem',
     },
-    "&.skillBox-wrapper": {
+    "&.skillBox-wrapper , &.projects-wrapper, &.experience-wrapper , &.education-wrapper , &.contactCard-wrapper": {
       marginLeft: '0.5rem',
       marginBottom: '1rem',
     },
-    "&.projects-wrapper": {
-      marginLeft: '0.5rem',
-      marginBottom: '1rem',
-    },
-    "&.experience-wrapper": {
-      marginLeft: '0.5rem',
-      marginBottom: '1rem',
-    },
-    "&.education-wrapper": {
-      marginLeft: '0.5rem',
-      marginBottom: '1rem',
-    },
+  
 
     "& .contact-info-text": {
       fontSize: theme.fonts.sizes['sm'],
