@@ -79,8 +79,8 @@ export const CustomBox = styled('div')(({
     // WebkitBackgroundClip: 'text',
     color: 'transparent',
   },
-  "& .gradient-bar":{
-    
+  "& .gradient-bar": {
+
     position: 'relative',
     '&::after': {
       content: '""',
@@ -106,7 +106,7 @@ export const CustomBox = styled('div')(({
     marginTop: '0.9rem',
     marginBottom: '0.9rem',
   },
-  "& .job-title-typography , & .course-name-typography": {
+  "& .job-title-typography , & .course-name-typography , & .Contact-Information-typography": {
     color: theme.colors.text.primary,
     fontSize: theme.fonts.sizes['lg'],
     fontWeight: theme.fonts.weights.medium
@@ -117,7 +117,7 @@ export const CustomBox = styled('div')(({
     fontWeight: theme.fonts.weights.medium,
 
   },
-  "& .company-duration-typography , & .course-duration-typography": {
+  "& .company-duration-typography , & .course-duration-typography , & .location-typography": {
     color: theme.colors.text.gray[400],
     fontSize: theme.fonts.sizes['sm'],
     fontWeight: theme.fonts.weights.medium,
@@ -126,6 +126,9 @@ export const CustomBox = styled('div')(({
     color: theme.colors.text.gray[300],
     fontSize: theme.fonts.sizes['sm'],
     fontWeight: theme.fonts.weights.medium,
+  },
+  "& .contact-info-text": {
+    fontSize: theme.fonts.sizes['base'],
   },
   // Responsive styles for larger screens
   '@media screen and (min-width: 2560px)': {
@@ -163,7 +166,10 @@ export const CustomBox = styled('div')(({
       maxWidth: '80%',
       minWidth: '80%',
       // border: '2px solid green',
-    }
+    },
+    "& .contact-info-text": {
+      fontSize: theme.fonts.sizes['base'],
+    },
   },
   // Responsive styles for smaller screens
   '@media screen and (max-width: 600px)': {
@@ -180,7 +186,7 @@ export const CustomBox = styled('div')(({
       fontSize: theme.fonts.sizes["6xl"],
       paddingLeft: '1rem',
     },
-    "& .gradient-bar":{
+    "& .gradient-bar": {
 
       '&::after': {
         content: '""',
@@ -192,24 +198,15 @@ export const CustomBox = styled('div')(({
       // textAlign: 'center',
       paddingLeft: '1rem',
     },
-    "&.skillBox-wrapper": {
+    "&.skillBox-wrapper , &.projects-wrapper, &.experience-wrapper , &.education-wrapper , &.contactCard-wrapper": {
       marginLeft: '0.5rem',
       marginBottom: '1rem',
     },
-    "&.projects-wrapper": {
-      marginLeft: '0.5rem',
-      marginBottom: '1rem',
-    },
-    "&.experience-wrapper": {
-      marginLeft: '0.5rem',
-      marginBottom: '1rem',
-    },
-    "&.education-wrapper": {
-      marginLeft: '0.5rem',
-      marginBottom: '1rem',
-    },
+  
 
-
+    "& .contact-info-text": {
+      fontSize: theme.fonts.sizes['sm'],
+    },
 
   },
   // -------------------------------------------------
@@ -254,7 +251,9 @@ export const CustomBox = styled('div')(({
       marginBottom: '1rem',
     },
 
-
+    "& .contact-info-text": {
+      fontSize: theme.fonts.sizes['base'],
+    },
 
   },
   // Responsive styles for laptop 1024 to 1339 px screens
