@@ -5,6 +5,7 @@ import { Grid } from '@mui/material'
 import { education } from '@/utils/education.utils'
 import RoomSharpIcon from '@mui/icons-material/RoomSharp';  
 import EmailIcon from '@mui/icons-material/Email';
+import CustomForm from './customForm'
 
 const ContactFrom = () => {
     return (
@@ -20,7 +21,7 @@ const ContactFrom = () => {
                 </Grid>
 
                 {/* This grid is showing my contact-info start */}
-                <Grid item size={{ sm: 6, lg: 5, xl: 5 }} >
+                <Grid item size={{ sm: 5, lg: 5, xl: 5 }} >
                     <CustomBox mb={"2rem"} fontSize="xl">
                         <h1 className='typography-main contact-info-text'>
                             I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Feel free to reach out using the form or through social media
@@ -83,62 +84,29 @@ const ContactFrom = () => {
 
                 {/* This grid is showing my Education start */}
                 <Grid item size={{ sm: 6, lg: 6, xl: 5 }}>
-                    <CustomBox mb={"2rem"} fontSize="xl">
-                        <h1 className='typography-main resume-subHeading-typography'>
-                            Education
-                        </h1>
-                    </CustomBox>
-                    {
-                        education?.map((education, index) => {
-                            return (
+                    
+                  
                                 <CustomBox
-                                    key={index}
+                                   
                                     display="flex"
                                     flexDirection="column"
                                     // alignItems="start"
                                     paddingInline="1rem"
                                     paddingBlock="1rem"
-                                    backgroundColor='rgba(26, 26, 46, 0.6)'
+                                    // backgroundColor='rgba(255, 255, 255, 0.05)'
+                                    backgroundColor='rgba(0, 0, 0, 0.3) '
                                     backdropFilter='blur(12px)'
-                                    border='1px solid rgba(74, 74, 138, 0.3)'
+                                    border='1px solid rgba(255, 255, 255, 0.1)'
                                     padding='20px'
                                     borderRadius='8px'
                                     mb="1.5rem"
-                                    className='education-wrapper'
+                                   className='contactCard-wrapper'
 
                                 >
-                                    <h2 className='course-name-typography'>
-                                        {
-                                            education?.courseName
-                                        }
-
-                                    </h2>
-                                    <CustomBox
-                                        display="flex"
-                                        justifyContent="space-between"
-                                        mb="0.8rem"
-                                        marginTop="0.8rem"
-                                    >
-                                        <h2 className='institution-name-typography'>
-                                            {
-                                                education?.instituionName
-                                            }
-                                        </h2>
-                                        <h3 className='course-duration-typography'>
-                                            {
-                                                education?.courseDuration
-                                            }
-                                        </h3>
-                                    </CustomBox>
-                                    <p className='specilization-details-typography'>
-                                        {
-                                            education?.specilization
-                                        }
-                                    </p>
+                                   <CustomForm />
                                 </CustomBox>
-                            )
-                        })
-                    }
+                           
+                    
 
                 </Grid>
                 {/* This grid is showing my Education end */}
