@@ -6,6 +6,7 @@ import IntroSection from '@/component/IntroSection';
 import AboutMe from '@/component/aboutMe';
 import Project from '@/component/project';
 import Resume from '@/component/resume';
+import ContactFrom from '@/component/contactFrom';
 
   const page = () => {
     return (
@@ -44,7 +45,7 @@ import Resume from '@/component/resume';
             <AboutMe/>
             <Project/>
             <Resume/>
-            {/* <IntroSection/> */}
+            <ContactFrom/>
           </CustomBox>
           {/* Right side content  outer box end */}
 
