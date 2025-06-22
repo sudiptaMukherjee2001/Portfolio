@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import { CustomBox } from '@/style/CustomBox.style'
 import CustomSection from './customSection'
 import { Grid } from '@mui/material'
@@ -7,9 +7,13 @@ import RoomSharpIcon from '@mui/icons-material/RoomSharp';
 import EmailIcon from '@mui/icons-material/Email';
 import CustomForm from './customForm'
 
-const ContactFrom = () => {
+
+const ContactFrom = forwardRef((props,ref) => {
+    
     return (
-        <CustomBox className='rightside-content-wrapper'>
+        <CustomBox className='rightside-content-wrapper'
+        ref={ref}
+        >
             <Grid container maxWidth={'98%'} justifyContent={"space-between"} >
 
                 <Grid item size={{ xs: 11, sm: 12, lg: 12, xl: 12 }} >
@@ -113,6 +117,6 @@ const ContactFrom = () => {
             </Grid>
         </CustomBox>
     )
-}
+})
 
 export default ContactFrom

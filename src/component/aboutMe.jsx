@@ -22,13 +22,13 @@ const AboutMe = () => {
                 {/* Title of about me section end */}
                 {/* Description about me start */}
                 <Grid item size={{ lg: 12, xl: 12 }} >
-                    <CustomBox fontSize="sm" maxWidth="90%" paraGap="1.5rem" >
+                    <CustomBox fontSize="lg" maxWidth="90%" paraGap="1.5rem" >
                         <h3 className='typography-sub'  >
-                            I build elegant UIs & automate DevOps workflows with a focus on performance and user experience.I'm a passionate developer with over 5 years of experience spanning both frontend development and DevOps engineering. My expertise lies in creating intuitive user interfaces while also building robust infrastructure to support them.
+                           I love turning ideas into clean, modern UIs and enjoy diving into cloud tools to bring them to life. With a strong interest in frontend and DevOps, I’m always exploring new ways to build smarter and smoother web experiences. Learning is my fuel, and building is my happy place.
                         </h3>
-                        <h3 className='typography-sub' >
+                        {/* <h3 className='typography-sub' >
                             With a strong foundation in modern JavaScript frameworks and cloud technologies, I enjoy solving complex problems and continuously learning new technologies to stay at the forefront of the industry.
-                        </h3>
+                        </h3> */}
                     </CustomBox>
                 </Grid>
                 {/* Description about me end */}
