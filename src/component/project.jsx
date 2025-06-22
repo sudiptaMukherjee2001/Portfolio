@@ -1,15 +1,17 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import CustomSection from './customSection'
 import { CustomBox, CustomChip, GradientButton } from '@/style/CustomBox.style'
 import { Grid } from '@mui/material'
 import { projects } from '@/utils/project.utils'
 import Image from 'next/image'
+import Link from 'next/link'
 
-const Project = () => {
+const Project = forwardRef((props, ref) => {
     return (
         <Grid container
             maxWidth={'98%'}
             // border={'1px solid orange'}
+            ref={ref}
         >
             <CustomBox className='rightside-content-wrapper'>
                 {/* Title of  Project section start */}
@@ -22,16 +24,16 @@ const Project = () => {
                 </Grid>
                 {/* Title of Project section end */}
                 {/* All Project part start here */}
-                <Grid item size={{ xs:12,sm:12, lg: 12, xl: 12 }} >
+                <Grid item size={{ xs: 12, sm: 12, lg: 12, xl: 12 }} >
                     <CustomBox className='projects-wrapper'>
                         <Grid container spacing={2} maxWidth="98%"
                         //  border={"3px solid pink"}
-                         >
+                        >
                             {
                                 projects.map((project, index) => (
                                     <Grid item
-                                        size={{ sm:6, lg: 6, xl: 6 }}
-                                        
+                                        size={{ sm: 6, lg: 6, xl: 6 }}
+
                                     >
                                         <CustomBox
                                             display="flex"
@@ -63,14 +65,17 @@ const Project = () => {
                                                     ))
                                                 }
                                             </CustomBox>
+
+                                            <Link href={project.url} target="_blank" rel="noopener noreferrer">
                                             <GradientButton
                                                 width="fit-content"
                                                 padding="0.5rem 1rem"
                                                 marginTop="0"
-                                                backgroundImage="no"
+                                                // backgroundImage="no"
                                                 className='project-btn'>
                                                 {project?.btnTxt}
                                             </GradientButton>
+                                            </Link>
                                         </CustomBox>
                                     </Grid>
                                 ))}
@@ -84,14 +89,10 @@ const Project = () => {
                 {/* All Project part end here */}
             </CustomBox>
 
-
-
-
-
         </Grid>
 
 
     )
-}
+})
 
 export default Project

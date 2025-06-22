@@ -1,3 +1,5 @@
+
+// import img from "../../public/GitHub-Actions.png";
 export const skills = [
     { name: "HTML5", icon: "🌐" },
     { name: "CSS3", icon: "🎨" },
@@ -7,8 +9,13 @@ export const skills = [
     { name: "Node.js", icon: "🟢" },
     { name: "Docker", icon: "🐳" },
     { name: "AWS", icon: "☁️" },
-    { name: "Jenkins", icon: "🔄" },
+
+    { name: "Github Action", 
+      icon:"🔄"
+    },
+
+
     { name: "Git", icon: "📊" },
-    { name: "CI/CD", icon: "🔄" },
+  
     { name: "Kubernetes", icon: "⚙️" },
   ];
