@@ -9,7 +9,7 @@ import Project from '@/component/project';
 import Resume from '@/component/resume';
 import ContactFrom from '@/component/contactFrom';
 
-const page = () => {
+export default function Page(){
   const projectRef = useRef(null);
   const contactRef = useRef(null);
 
@@ -71,4 +71,4 @@ const page = () => {
   );
 };
 
-export default page;
+
