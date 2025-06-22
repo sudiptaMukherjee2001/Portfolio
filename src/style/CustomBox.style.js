@@ -57,6 +57,8 @@ export const CustomBox = styled('div')(({
   boxShadow: boxShadow,
   transition: `${boxShadow} 5s ease-in`,
   cursor: 'pointer',
+  scrollbarWidth: 'none',
+  msOverflowStyle: 'none',
 
   "&:hover": {
     boxShadow: boxShadow ? theme.shadows.lightHover : "", // Use a predefined shadow or create a custom one
@@ -208,7 +210,7 @@ export const CustomBox = styled('div')(({
       marginLeft: '0.5rem',
       marginBottom: '1rem',
     },
-  
+
 
     "& .contact-info-text": {
       fontSize: theme.fonts.sizes['sm'],
