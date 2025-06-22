@@ -13,7 +13,7 @@ const Project = forwardRef((props, ref) => {
             // border={'1px solid orange'}
             ref={ref}
         >
-            <CustomBox className='rightside-content-wrapper'>
+            <CustomBox className='rightside-content-wrapper' mb="0.8rem">
                 {/* Title of  Project section start */}
                 <Grid item size={{ lg: 12, xl: 12 }} >
                     <CustomBox mb={"2rem"} fontSize="4xl" gradientLineWidth="10%">
