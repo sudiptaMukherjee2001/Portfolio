@@ -111,6 +111,7 @@ const ContactFrom = forwardRef((props,ref) => {
                                     border='1px solid rgba(255, 255, 255, 0.1)'
                                     padding='20px'
                                     borderRadius='8px'
+                                    mb="1rem"
                                    className='contactCard-wrapper'
 
                                 >
