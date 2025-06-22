@@ -1,7 +1,7 @@
 'use client';
 import { styled } from '@mui/material/styles';
 import theme from "../utils/theme.js";
-import { Chip } from '@mui/material';
+import { Button, Chip } from '@mui/material';
 export const CustomBox = styled('div')(({
   Width,
   Height,
@@ -106,6 +106,12 @@ export const CustomBox = styled('div')(({
     marginTop: '0.9rem',
     marginBottom: '0.9rem',
   },
+  "& .project-description-typography": {
+    color: theme.colors.text.primary,
+    fontSize: theme.fonts.sizes['sm'],
+    // marginTop: '0.9rem',
+    marginBottom: '0.2rem',
+  },
   "& .job-title-typography , & .course-name-typography , & .Contact-Information-typography": {
     color: theme.colors.text.primary,
     fontSize: theme.fonts.sizes['lg'],
@@ -135,12 +141,12 @@ export const CustomBox = styled('div')(({
     "&.mainContainer": {
       maxWidth: '2315px',
       margin: '0 auto',
-      border: '7px solid blue',
+      // border: '7px solid blue',
     },
     // 1. left section responsive styles 
     '&.avatarBox': {
-      width: '450px',
-      height: '450px',
+      width: '400px',
+      height: '400px',
     },
     '& .img': {
       width: '100%',
@@ -149,7 +155,7 @@ export const CustomBox = styled('div')(({
     // 2. Introsection responsive styles
     "&.rightside-content-wrapper": {
       padding: '0px',
-      border: '2px solid blue',
+      // border: '2px solid blue',
       minHeight: '67vh',
       display: 'flex',
       flexDirection: 'column',
@@ -160,12 +166,12 @@ export const CustomBox = styled('div')(({
     "&.projects-wrapper": {
       maxWidth: '81%',
       minWidth: '81%',
-      border: '2px solid green',
+      // border: '2px solid green',
     },
     "&.skillBox-wrapper": {
       maxWidth: '80%',
       minWidth: '80%',
-      border: '2px solid green',
+      // border: '2px solid green',
     },
     "& .contact-info-text": {
       fontSize: theme.fonts.sizes['base'],
@@ -270,9 +276,8 @@ export const CustomBox = styled('div')(({
 }))
 
 
-export const GradientButton = styled('button')(({
+export const GradientButton = styled(Button)(({
   width,
-
   backgroundImage,
   marginTop,
   padding }) => ({
@@ -294,8 +299,8 @@ export const GradientButton = styled('button')(({
     cursor: 'pointer',
     transform: 'none',
     marginTop: marginTop ? marginTop : '1.6rem',
-
     backgroundColor: theme.colors.background.border.opacity20,
+    textTransform: 'capitalize', // capitalize text
 
     '&:hover': {
       backgroundImage: 'linear-gradient(to right, #2b6cb0, #6b46c1)',
