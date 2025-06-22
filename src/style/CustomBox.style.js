@@ -208,7 +208,7 @@ export const CustomBox = styled('div')(({
     },
     "&.skillBox-wrapper , &.projects-wrapper, &.experience-wrapper , &.education-wrapper , &.contactCard-wrapper": {
       marginLeft: '0.5rem',
-      marginBottom: '1rem',
+      
     },
 
 

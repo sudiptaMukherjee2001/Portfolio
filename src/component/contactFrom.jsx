@@ -26,7 +26,7 @@ const ContactFrom = forwardRef((props,ref) => {
 
                 {/* This grid is showing my contact-info start */}
                 <Grid item size={{ sm: 5, lg: 5, xl: 5 }} >
-                    <CustomBox mb={"2rem"} fontSize="xl">
+                    <CustomBox mb={"1rem"} fontSize="xl">
                         <h1 className='typography-main contact-info-text'>
                             I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Feel free to reach out using the form or through social media
                         </h1>
@@ -43,11 +43,14 @@ const ContactFrom = forwardRef((props,ref) => {
                         
                         borderRadius='8px'
                         className='contactCard-wrapper'
+                        mb="1rem"
 
                     >
                         <h2 className='Contact-Information-typography'>
                            Contact Information
                         </h2>
+                        {/* Contact info details start */}
+                        {/* location  info start */}
                         <CustomBox
                             display="flex"
                             // justifyContent="space-between"
@@ -65,6 +68,9 @@ const ContactFrom = forwardRef((props,ref) => {
                                Bangalore, India
                             </CustomBox>
                         </CustomBox>
+                        {/* location info end */}
+
+                        {/*Email info start  */}
                         <CustomBox
                             display="flex"
                             // justifyContent="space-between"
@@ -81,12 +87,14 @@ const ContactFrom = forwardRef((props,ref) => {
                                work.sudipta001@gmail.com
                             </CustomBox>
                         </CustomBox>
+                        {/* Email info end  */}
+                         {/* Contact info details end */}
                        
                     </CustomBox>
                 </Grid>
                 {/* This grid is showing contact-info end */}
 
-                {/* This grid is showing my Education start */}
+                {/* This grid is showing contant form start */}
                 <Grid item size={{ sm: 6, lg: 6, xl: 5 }}>
                     
                   
@@ -103,7 +111,6 @@ const ContactFrom = forwardRef((props,ref) => {
                                     border='1px solid rgba(255, 255, 255, 0.1)'
                                     padding='20px'
                                     borderRadius='8px'
-                                    mb="1.5rem"
                                    className='contactCard-wrapper'
 
                                 >
@@ -113,7 +120,7 @@ const ContactFrom = forwardRef((props,ref) => {
                     
 
                 </Grid>
-                {/* This grid is showing my Education end */}
+                {/* This grid is showing contant form end */}
             </Grid>
         </CustomBox>
     )

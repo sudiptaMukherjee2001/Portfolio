@@ -10,7 +10,7 @@ const AboutMe = () => {
             maxWidth={'98%'}
             // border={'1px solid orange'}
         >
-            <CustomBox className='rightside-content-wrapper'>
+            <CustomBox mb="1rem" className='rightside-content-wrapper'>
                 {/* Title of about me section start */}
                 <Grid item size={{ lg: 12, xl: 12 }} >
                     <CustomBox mb={"2rem"} fontSize="4xl" gradientLineWidth="10%">
@@ -22,7 +22,7 @@ const AboutMe = () => {
                 {/* Title of about me section end */}
                 {/* Description about me start */}
                 <Grid item size={{ lg: 12, xl: 12 }} >
-                    <CustomBox fontSize="lg" maxWidth="90%" paraGap="1.5rem" >
+                    <CustomBox fontSize="lg" mb={"1rem"} maxWidth="90%" >
                         <h3 className='typography-sub'  >
                            I love turning ideas into clean, modern UIs and enjoy diving into cloud tools to bring them to life. With a strong interest in frontend and DevOps, I’m always exploring new ways to build smarter and smoother web experiences. Learning is my fuel, and building is my happy place.
                         </h3>
