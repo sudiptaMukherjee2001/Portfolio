@@ -7,7 +7,7 @@ import { education } from '@/utils/education.utils'
 const Resume = () => {
     return (
 
-        <CustomBox className='rightside-content-wrapper'>
+        <CustomBox className='rightside-content-wrapper' >
             <Grid container maxWidth={'98%'} spacing={2} >
 
                 <Grid item size={{ xs:12, sm:12, lg: 12, xl: 12 }} >

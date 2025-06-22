@@ -13,7 +13,7 @@ const IntroSection = ({onProjectClick}) => {
             maxWidth={'98%'}
         // border={'1px solid orange'}
         >
-            <CustomBox  className='rightside-content-wrapper small-device-responsiveness' paddingBlock="2rem">
+            <CustomBox  className='rightside-content-wrapper small-device-responsiveness' marginTop="1rem" mb="0.6rem">
 
                 <Grid item size={{ lg: 12, xl: 12 }} >
                     <CustomChip label="Frontend Developer & DevOps Engineer" variant="outlined" />
@@ -29,7 +29,7 @@ const IntroSection = ({onProjectClick}) => {
                 </Grid>
                 <Grid item size={{ lg: 12, xl: 12 }} >
 
-                    <CustomBox mb={"1rem"} fontSize="xl" maxWidth="764px" className='short-text'>
+                    <CustomBox mb={"1rem"}  fontSize="xl" maxWidth="764px" className='short-text'>
                         <h3 className='typography-sub'>
                             I build elegant UIs & automate DevOps workflows with a focus on performance and user experience.
                         </h3>
