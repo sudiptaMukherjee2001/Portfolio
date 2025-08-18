@@ -41,14 +41,14 @@ const Project = forwardRef((props, ref) => {
                                             size={{ sm: 6, lg: 6, xl: 6 }}
 
                                         >
-                                            <motion.div
+                                            {/* <motion.div
 
                                             initial={{ opacity: 0, y: 20 }}
                                             whileInView={{ opacity: 1, y: 0 }}
                                             exit={{ opacity: 1, y: 0 }}
                                             transition={{ duration: 0.5 }}
                                             viewport={{ once: false, amount: 0.75 }}
-                                        >
+                                        > */}
                                             
 
                                             
@@ -115,7 +115,7 @@ const Project = forwardRef((props, ref) => {
                                                 </CustomBox>
                                             </CustomBox>
                                            
-                                            </motion.div>
+                                            {/* </motion.div> */}
                                         </Grid>
                                     )
                                     )

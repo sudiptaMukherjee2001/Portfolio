@@ -23,14 +23,14 @@ const Resume = () => {
 
                 {/* This grid is showing my Experience start */}
                 <Grid item size={{ sm: 6, lg: 6, xl: 5 }} >
-                    <motion.div
+                    {/* <motion.div
 
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.75 }}
                         viewport={{ once: false, amount: 0.75 }}
-                    >
+                    > */}
                         <CustomBox mb={"2rem"} fontSize="xl">
                             <h1 className='typography-main resume-subHeading-typography'>
                                 Work Experience
@@ -64,20 +64,20 @@ const Resume = () => {
                                 Built responsive UIs and secured authentication using NextAuth. Gained hands-on experience across the software development lifecycle
                             </p>
                         </CustomBox>
-                    </motion.div>
+                    {/* </motion.div> */}
                 </Grid>
                 {/* This grid is showing my Experience end */}
 
                 {/* This grid is showing my Education start */}
                 <Grid item size={{ sm: 6, lg: 6, xl: 5 }}>
-                    <motion.div
+                    {/* <motion.div
 
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5 }}
                         viewport={{ once: false, amount: 0.75 }}
-                    >
+                    > */}
 
 
                         <CustomBox mb={"2rem"} fontSize="xl">
@@ -136,7 +136,7 @@ const Resume = () => {
                                 )
                             })
                         }
-                    </motion.div>
+                    {/* </motion.div> */}
                 </Grid>
                 {/* This grid is showing my Education end */}
 
