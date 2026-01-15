@@ -15,7 +15,7 @@
     "@mui/icons-material": "^7.1.1",
     "@mui/material": "^7.1.1",
     "framer-motion": "^12.23.12",
-    "next": "15.3.3",
+    "next": "^16.1.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-hook-form": "^7.58.1"
@@ -23,6 +23,6 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "eslint": "^9",
-    "eslint-config-next": "15.3.3"
+    "eslint-config-next": "^16.1.2"
   }
 }
