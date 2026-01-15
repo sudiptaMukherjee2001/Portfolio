@@ -138,8 +138,8 @@ export const CustomBox = styled('div')(({
   "& .contact-info-text": {
     fontSize: theme.fonts.sizes['base'],
   },
-  // Responsive styles for larger screens
-  '@media screen and (min-width: 2560px)': {
+  // Responsive styles for larger screens - 2560
+  '@media screen and (min-width: 1920px)': {
     "&.mainContainer": {
       maxWidth: '2315px',
       margin: '0 auto',

@@ -21,7 +21,7 @@ const LeftSidebar = ({ onContactClick }) => {
         backgroundColor="rgba(168, 85, 247, 0.2)"
         className='avatarBox'>
 
-        <Image src="/myimg.jpeg" alt="demo" width={200} height={200} className='img' />
+        <Image src="/myimg.jpeg" alt="demo" width={200} height={200} className='img' priority />
       </CustomBox>
       {/* Avatar part end */}
 

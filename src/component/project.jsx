@@ -67,7 +67,7 @@ const Project = forwardRef((props, ref) => {
                                                 boxShadow='0 0 0 rgba(0,0,0,0)'
 
                                             >
-                                                <Image src={project.imageUrl} alt="demo" width={0} height={200} className='project-img' />
+                                                <Image src={project.imageUrl} alt="demo" width={0} height={200} className='project-img' priority/>
                                                 <h2 className='project-title-typography'>{project.title}</h2>
                                                 <p className='project-description-typography'>{project.description}</p>
                                                 <CustomBox display="flex" flexWrap="wrap" marginTop="0.8rem" mb="2rem" gap="0.6rem">
