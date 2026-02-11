@@ -22,15 +22,8 @@ const Resume = () => {
 
 
                 {/* This grid is showing my Experience start */}
-                <Grid item size={{ sm: 6, lg: 6, xl: 5 }} >
-                    {/* <motion.div
-
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.75 }}
-                        viewport={{ once: false, amount: 0.75 }}
-                    > */}
+                <Grid item size={{ sm: 6, lg: 6, xl: 6 }} >
+                
                         <CustomBox mb={"2rem"} fontSize="xl">
                             <h1 className='typography-main resume-subHeading-typography'>
                                 Work Experience
@@ -69,7 +62,7 @@ const Resume = () => {
                 {/* This grid is showing my Experience end */}
 
                 {/* This grid is showing my Education start */}
-                <Grid item size={{ sm: 6, lg: 6, xl: 5 }}>
+                <Grid item size={{ sm: 6, lg: 6, xl: 6 }}>
                     {/* <motion.div
 
                         initial={{ opacity: 0, y: 20 }}

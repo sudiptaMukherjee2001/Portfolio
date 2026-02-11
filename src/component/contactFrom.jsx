@@ -95,7 +95,7 @@ const ContactFrom = forwardRef((props,ref) => {
                 {/* This grid is showing contact-info end */}
 
                 {/* This grid is showing contant form start */}
-                <Grid item size={{ sm: 6, lg: 6, xl: 5 }}>
+                <Grid item size={{ sm: 6, lg: 6, xl: 6 }}>
                     
                   
                                 <CustomBox
