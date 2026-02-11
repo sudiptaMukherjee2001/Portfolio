@@ -76,7 +76,7 @@ const LeftSidebar = ({ onContactClick }) => {
             <svg xmlns="http://www.w3.org/2000/svg"
               width="20" height="20" viewBox="0 0 24 24"
               fill="none" stroke="currentColor"
-              strokeWidth="1.8" strokesLinecap="round" strokeLinejoin="round"
+              strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"
               className="lucide lucide-whatsapp">
               <path d="M12 2a10 10 0 0 0-8.5 15.5L3 21l3.6-0.7A10 10 0 1 0 12 2z"></path>
               <path d="M16.6 14.6c-.3-.2-1-.5-1.2-.6s-.4-.1-.6.2c-.2.3-.5.7-.7.9-.1.2-.3.2-.5.1a7 7 0 0 1-3.1-3.1c-.1-.2 0-.4.2-.5l.9-.9c.1-.2.1-.3 0-.5s-.5-.9-.7-1.3c-.2-.4-.4-.4-.5-.4h-.5c-.2 0-.4 0-.6.2-.2.2-.9.8-.9 2.1s1 2.5 1.2 2.7c.2.3 1.9 3 4.6 3.9.6.2 1.1.3 1.5.3.5 0 1.3-.2 1.5-.7.2-.4.2-1.1.1-1.3 0-.2-.2-.3-.5-.4z"></path>
@@ -86,7 +86,7 @@ const LeftSidebar = ({ onContactClick }) => {
         {/* Social Media end*/}
 
         {/* <Link href="#contact-section"> */}
-        <GradientButton onClick={onContactClick} marginTop="2rem">
+        <GradientButton onClick={onContactClick} mt="2rem">
           Let's Work Together
         </GradientButton>
         {/* </Link> */}

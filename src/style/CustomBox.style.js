@@ -275,7 +275,7 @@ export const CustomBox = styled('div')(({
   '@media screen and  (min-width: 1024px) and (max-width: 1699px)': {
 
   "&.rightside-wrapper":{
-      border: '2px solid red',
+      // border: '2px solid red',
        maxWidth: '90%',
       // margin: '0 auto',
     },
@@ -297,12 +297,12 @@ export const CustomBox = styled('div')(({
       justifyContent: 'space-evenly',
       "& .dev-name":{
         marginBottom:"0px",
-        border: '2px solid green',
+        // border: '2px solid green',
 
       },
       "& .short-text":{
         marginBottom:"0px",
-        border: '2px solid green',
+        // border: '2px solid green',
 
       }
     },
@@ -315,7 +315,7 @@ export const CustomBox = styled('div')(({
 export const GradientButton = styled(Button)(({
   width,
   backgroundImage,
-  marginTop,
+  mt,
   padding }) => ({
     display: 'inline-flex',
     alignItems: 'center',
@@ -334,7 +334,7 @@ export const GradientButton = styled(Button)(({
     transition: 'all 0.3s ease-in',
     cursor: 'pointer',
     transform: 'none',
-    marginTop: marginTop ? marginTop : '0rem',
+    marginTop: mt ? mt : '0rem',
     backgroundColor: theme.colors.background.border.opacity20,
     textTransform: 'capitalize', // capitalize text
 

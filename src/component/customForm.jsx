@@ -1,10 +1,12 @@
 'use client';
-import React from 'react';
+import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { Box, Button, TextField, Typography } from '@mui/material';
 import SendIcon from '@mui/icons-material/Send';
 import { styled } from '@mui/material/styles';
 import emailjs from '@emailjs/browser';
+import toast from "react-hot-toast";
+import CircularProgress from "@mui/material/CircularProgress";
 // 🌌 Styled form container
 const FormContainer = styled(Box)(({ theme }) => ({
     maxWidth: '450px',
@@ -54,6 +56,8 @@ const SubmitButton = styled(Button)({
 });
 
 const CustomForm = () => {
+    const [loading, setLoading] = useState(false);
+
     const {
         register,
         handleSubmit,
@@ -62,22 +66,15 @@ const CustomForm = () => {
     } = useForm();
 
     const onSubmit = async (data) => {
-
+        setLoading(true);
+        const now = new Date();
+        const formattedTime = now.toISOString();
         try {
             const emailParams = {
                 name: data?.name,
                 email: data?.email,
                 message: data?.description,
-                time: new Date().toLocaleString('en-IN', {
-                    timeZone: 'Asia/Kolkata',
-                    hour: '2-digit',
-                    minute: '2-digit',
-                    hour12: true,
-                    weekday: 'short',
-                    year: 'numeric',
-                    month: 'short',
-                    day: 'numeric'
-                })
+                time: formattedTime
 
         };
 
@@ -87,18 +84,18 @@ const CustomForm = () => {
         const userID = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
         const res = await emailjs.send(serviceID, templateID, emailParams, userID);
 
+       
         if (res.status === 200) {
-            // toast.success("Message sent successfully!");
-
-            reset(); // Reset the form fields
-
+            toast.success("Message sent successfully 🚀");
+            reset();
         }
+
     } catch (error) {
-        alert("Failed to send message. Please try again later.");
-        // toast.error("Failed to send message. Please try again later.");
+        console.error("EMAIL ERROR:", error);
+        toast.error("Failed to send message ❌");
+    } finally {
+        setLoading(false);
     }
-
-
 };
 
 return (
@@ -138,8 +135,15 @@ return (
             helperText={errors.description?.message}
         />
 
-        <SubmitButton fullWidth type="submit" endIcon={<SendIcon />}>
-            Send Message
+        <SubmitButton fullWidth type="submit"
+        endIcon={!loading && <SendIcon />}
+         disabled={loading}
+        >
+           {loading ? (
+        <CircularProgress size={22} sx={{ color: "white" }} />
+        ) : (
+        "Send Message"
+            )}
         </SubmitButton>
     </form>
 );
