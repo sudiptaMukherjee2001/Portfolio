@@ -136,17 +136,28 @@ export const CustomBox = styled('div')(({
   "& .contact-info-text": {
     fontSize: theme.fonts.sizes['base'],
   },
+
+  //  "&.rightside-wrapper":{
+  //     border: '2px solid red',
+  //   },
+
+
   // Responsive styles for larger screens
-  '@media screen and (min-width: 2560px)': {
+  '@media screen and (min-width: 1700px)': {
     "&.mainContainer": {
-      maxWidth: '2315px',
-      margin: '0 auto',
+      // maxWidth: '2315px',
+      // margin: '0 auto',
       // border: '7px solid blue',
+    },
+    "&.rightside-wrapper":{
+      // border: '2px solid red',
+       maxWidth: '90%',
+      // margin: '0 auto',
     },
     // 1. left section responsive styles 
     '&.avatarBox': {
-      width: '400px',
-      height: '400px',
+      width: '300px',
+      height: '300px',
     },
     '& .img': {
       width: '100%',
@@ -160,19 +171,15 @@ export const CustomBox = styled('div')(({
       display: 'flex',
       flexDirection: 'column',
       justifyContent: 'space-evenly',
-      minWidth: '90%',
-      maxWidth: '90%',
+      "& .dev-name":{
+        marginBottom:"0px",
+      },
+      "& .short-text":{
+        marginBottom:"0px",
+      }
     },
-    "&.projects-wrapper": {
-      maxWidth: '81%',
-      minWidth: '81%',
-      // border: '2px solid green',
-    },
-    "&.skillBox-wrapper": {
-      maxWidth: '80%',
-      minWidth: '80%',
-      // border: '2px solid green',
-    },
+
+  
     "& .contact-info-text": {
       fontSize: theme.fonts.sizes['base'],
     },
@@ -263,12 +270,39 @@ export const CustomBox = styled('div')(({
 
   },
   // Responsive styles for laptop 1024 to 1339 px screens
-  '@media screen and  (min-width: 1024px) and (max-width: 1339px)': {
+  '@media screen and  (min-width: 1024px) and (max-width: 1699px)': {
 
-    "&.mainContainer": {
-      maxWidth: '1280px',
-      margin: '0 auto',
+  "&.rightside-wrapper":{
+      border: '2px solid red',
+       maxWidth: '90%',
+      // margin: '0 auto',
+    },
+      '&.avatarBox': {
+      width: '300px',
+      height: '300px',
+    },
+    '& .img': {
+      width: '100%',
+      height: '100%',
+    },
+    // 2. Introsection responsive styles
+    "&.rightside-content-wrapper": {
+      padding: '0px',
       // border: '2px solid blue',
+      minHeight: '67vh',
+      display: 'flex',
+      flexDirection: 'column',
+      justifyContent: 'space-evenly',
+      "& .dev-name":{
+        marginBottom:"0px",
+        border: '2px solid green',
+
+      },
+      "& .short-text":{
+        marginBottom:"0px",
+        border: '2px solid green',
+
+      }
     },
 
 
@@ -298,7 +332,7 @@ export const GradientButton = styled(Button)(({
     transition: 'all 0.3s ease-in',
     cursor: 'pointer',
     transform: 'none',
-    marginTop: marginTop ? marginTop : '1.6rem',
+    marginTop: marginTop ? marginTop : '0rem',
     backgroundColor: theme.colors.background.border.opacity20,
     textTransform: 'capitalize', // capitalize text
 
