@@ -34,7 +34,7 @@ const AboutMe = () => {
                 {/* Description about me end */}
                 {/* skill part start here */}
                 <Grid item size={{ lg: 12, xl: 12 }} >
-                    <CustomBox mb={"2rem"} fontSize="xl">
+                    <CustomBox mb={"2rem"} fontSize="4xl">
                         <h1 className='typography-main'>
                             Skills
                         </h1>

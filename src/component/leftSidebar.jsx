@@ -86,7 +86,7 @@ const LeftSidebar = ({ onContactClick }) => {
         {/* Social Media end*/}
 
         {/* <Link href="#contact-section"> */}
-        <GradientButton onClick={onContactClick}>
+        <GradientButton onClick={onContactClick} marginTop="2rem">
           Let's Work Together
         </GradientButton>
         {/* </Link> */}

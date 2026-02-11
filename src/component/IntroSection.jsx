@@ -20,7 +20,7 @@ const IntroSection = ({onProjectClick}) => {
                 </Grid>
                 <Grid item size={{ xs: 12, lg: 12, xl: 12 }} >
 
-                    <CustomBox mb={"3rem"} fontSize="7xl" gradientLineWidth="10%">
+                    <CustomBox mb={"3rem"} fontSize="7xl" gradientLineWidth="10%" className='dev-name'>
                         <h1 className='typography-main gradient-bar'>
                             Hi, I'm Sudipta Mukherjee.
                         </h1>

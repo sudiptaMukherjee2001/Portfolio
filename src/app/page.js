@@ -48,22 +48,21 @@ export default function Page() {
         // sx={{ border: '2px solid yellow' }}
         >
           {/* Right side content  outer box start .. All the section should be inside this outer box*/}
-    
-            <CustomBox
-              // border="2px solid red"
-              maxHeight="100vh"
-              minHeight="100vh"
-              overflow="auto"
-              //  border="1px solid red"
-              padding=' 0 0 0 0.3rem'
-            >
-              <IntroSection onProjectClick={handleScrollToProject} />
-              <AboutMe />
-              <Project ref={projectRef} />
-              <Resume />
-              <ContactFrom ref={contactRef} />
-            </CustomBox>
-        
+          <CustomBox
+            // border="2px solid red"
+            maxHeight="100vh"
+            minHeight="100vh"
+            overflow="auto"
+            //  border="1px solid red"
+            padding=' 0 0 0 0.3rem'
+            className='rightside-wrapper'
+          >
+            <IntroSection onProjectClick={handleScrollToProject}/>
+            <AboutMe />
+            <Project ref={projectRef} />
+            <Resume />
+            <ContactFrom ref={contactRef} />
+          </CustomBox>
           {/* Right side content  outer box end */}
 
         </Grid>
