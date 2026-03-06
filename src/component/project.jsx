@@ -39,35 +39,42 @@ const Project = forwardRef((props, ref) => {
 
                                         <Grid item
                                             size={{ sm: 6, lg: 6, xl: 6 }}
+                                            
+                                        key={index}
+                                        
 
                                         >
-                                            {/* <motion.div
-
-                                            initial={{ opacity: 0, y: 20 }}
-                                            whileInView={{ opacity: 1, y: 0 }}
-                                            exit={{ opacity: 1, y: 0 }}
-                                            transition={{ duration: 0.5 }}
-                                            viewport={{ once: false, amount: 0.75 }}
-                                        > */}
+                                           
                                             
 
                                             
                                             <CustomBox
+                                              
                                                 display="flex"
                                                 flexDirection="column"
-                                                // alignItems="start"
+                                                // height="100%"
+                                                justifyContent="space-between"
                                                 paddingInline="1rem"
                                                 paddingBlock="1rem"
-                                                backgroundColor='rgba(26, 26, 46, 0.6)'
-                                                backdropFilter='blur(12px)'
-                                                border='1px solid rgba(255, 255, 255, 0.1)'
-                                                padding='16px'
-                                                borderRadius='8px'
-                                                color='white'
-                                                boxShadow='0 0 0 rgba(0,0,0,0)'
+                                                backgroundColor="rgba(26, 26, 46, 0.6)"
+                                                backdropFilter="blur(12px)"
+                                                border="1px solid rgba(255, 255, 255, 0.1)"
+                                                borderRadius="8px"
+                                                className='project-card'
 
                                             >
-                                                <Image src={project.imageUrl} alt="demo" width={0} height={200} className='project-img' priority/>
+                                                {project?.imageUrl ?
+                                                <CustomBox className="project-image-wrapper">
+                                                    <Image
+                                                    src={project.imageUrl}
+                                                    alt={project.title}
+                                                    fill
+                                                    className="project-img"
+                                                    />
+                                                </CustomBox>
+                                                :null
+
+                                                }
                                                 <h2 className='project-title-typography'>{project.title}</h2>
                                                 <p className='project-description-typography'>{project.description}</p>
                                                 <CustomBox display="flex" flexWrap="wrap" marginTop="0.8rem" mb="2rem" gap="0.6rem">
