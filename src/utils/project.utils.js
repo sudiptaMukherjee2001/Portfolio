@@ -3,6 +3,24 @@ import linkdinUi from "../../public/linkdinUi.png";
 import taskLikho from "../../public/taskLikho.png";
 export const projects = [
     {
+        title: "Containerized MEAN Application with CI/CD",
+        description:
+            "Deployed a MEAN stack application using Docker containers and automated the deployment with a Jenkins CI/CD pipeline. The application runs on AWS EC2 with Nginx configured as a reverse proxy to route traffic between frontend and backend services.",
+        tags: [
+            "Docker",
+            "Docker Compose",
+            "Jenkins",
+            "AWS EC2",
+            "Nginx",
+            "Node.js",
+            "MongoDB"
+        ],
+    
+        
+        url: "https://github.com/sudiptaMukherjee2001/containerized-mean-stack-crud",
+        btnTxt:"Github"
+    },
+    {
         title: "Serverless EC2 Monitor & Control Dashboard",
         subtitle: "Real-Time EC2 Monitoring & Automation with AWS",
         description:

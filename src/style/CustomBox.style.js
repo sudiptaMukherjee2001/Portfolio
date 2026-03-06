@@ -102,18 +102,36 @@ export const CustomBox = styled('div')(({
     fontSize: theme.fonts.sizes[fontSize],
     marginBottom: paraGap,
   },
+
+  "& .project-card": {
+    minHeight: '380px',
+},
+  "& .project-image-wrapper": {
+  position: "relative",
+  height: "190px",
+  width: "100%",
+  // background: "#0f172a",
+  borderRadius: "8px",
+  // overflow: "hidden",
+  
+  // "& .project-img": {
+  //   objectFit: "cover",
+  // },
+},
+  
   "& .project-title-typography": {
     color: theme.colors.text.primary,
-    fontSize: theme.fonts.sizes['xl'],
-    marginTop: '0.9rem',
-    marginBottom: '0.9rem',
+    fontSize: theme.fonts.sizes['3xl'],
+    marginTop: '0.4rem',
+    marginBottom: '0.4rem',
   },
   "& .project-description-typography": {
     color: theme.colors.text.primary,
-    fontSize: theme.fonts.sizes['sm'],
-    // marginTop: '0.9rem',
-    marginBottom: '0.2rem',
+    fontSize: theme.fonts.sizes['base'],
+    marginTop: '0.4rem',
+    marginBottom: '0.4rem',
   },
+
   "& .job-title-typography , & .course-name-typography , & .Contact-Information-typography": {
     color: theme.colors.text.primary,
     fontSize: theme.fonts.sizes['lg'],
