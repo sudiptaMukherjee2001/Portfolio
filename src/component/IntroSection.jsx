@@ -6,7 +6,7 @@ import { Box, Grid } from '@mui/material';
 import Link from 'next/link';
 
 const IntroSection = ({onProjectClick}) => {
-    const myResume = "/Sudipta_Cloud_Resume.pdf";
+    const myResume = "/Sudipta-update-cloud-resume.pdf";
 
     return (
         <Grid container
