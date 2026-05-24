@@ -27,7 +27,7 @@ const Project = forwardRef((props, ref) => {
                 {/* All Project part start here */}
                 <Grid item size={{ xs: 12, sm: 12, lg: 12, xl: 12 }} >
                     <CustomBox className='projects-wrapper'>
-                            <Grid container spacing={2} maxWidth="98%"
+                            <Grid container spacing={2} maxWidth="100%"
                             //  border={"3px solid pink"}
                             >
 
@@ -76,7 +76,10 @@ const Project = forwardRef((props, ref) => {
 
                                                 }
                                                 <h2 className='project-title-typography'>{project.title}</h2>
-                                                <p className='project-description-typography'>{project.description}</p>
+                                               <p
+                                                className='project-description-typography'
+                                                dangerouslySetInnerHTML={{ __html: project.description }}
+                                            />
                                                 <CustomBox display="flex" flexWrap="wrap" marginTop="0.8rem" mb="2rem" gap="0.6rem">
                                                     {
                                                         project?.tags.map((tag, tagIndex) => (
@@ -90,36 +93,49 @@ const Project = forwardRef((props, ref) => {
                                                     }
                                                 </CustomBox>
 
-                                                <CustomBox
-                                                    display="flex"
-                                                    gap="0.5rem"
-                                                >
+                                               <CustomBox
+                                                        display="flex"
+                                                        gap="0.5rem"
+                                                        flexWrap="wrap"
+                                                    >
 
-                                                    <Link href={project.url} target="_blank" rel="noopener noreferrer">
-                                                        <GradientButton
-                                                            width="fit-content"
-                                                            padding="0.5rem 1rem"
-                                                            marginTop="0"
-                                                            // backgroundImage="no"
-                                                            className='project-btn'>
-                                                            {project?.btnTxt}
-                                                        </GradientButton>
-                                                    </Link>
-                                                    {
-                                                        project?.githubUrl &&
+                                                        {/* Github Button */}
+                                                        {project?.githubUrl && (
+                                                            <Link
+                                                                href={project.githubUrl}
+                                                                target="_blank"
+                                                                rel="noopener noreferrer"
+                                                            >
+                                                                <GradientButton
+                                                                    width="fit-content"
+                                                                    padding="0.5rem 1rem"
+                                                                    marginTop="0"
+                                                                    className='project-btn'
+                                                                >
+                                                                    {project?.githubTxt || "Github"}
+                                                                </GradientButton>
+                                                            </Link>
+                                                        )}
 
-                                                        <Link href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                                                            <GradientButton
-                                                                width="fit-content"
-                                                                padding="0.5rem 1rem"
-                                                                marginTop="0"
-                                                                // backgroundImage="no"
-                                                                className='project-btn'>
-                                                                {project?.githubTxt}
-                                                            </GradientButton>
-                                                        </Link>
-                                                    }
-                                                </CustomBox>
+                                                        {/* Live / Normal URL Button */}
+                                                        {project?.url && (
+                                                            <Link
+                                                                href={project.url}
+                                                                target="_blank"
+                                                                rel="noopener noreferrer"
+                                                            >
+                                                                <GradientButton
+                                                                    width="fit-content"
+                                                                    padding="0.5rem 1rem"
+                                                                    marginTop="0"
+                                                                    className='project-btn'
+                                                                >
+                                                                    {project?.btnTxt || "Live Demo"}
+                                                                </GradientButton>
+                                                            </Link>
+                                                        )}
+
+                                                    </CustomBox>
                                             </CustomBox>
                                            
                                             {/* </motion.div> */}

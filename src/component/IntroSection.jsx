@@ -6,21 +6,25 @@ import { Box, Grid } from '@mui/material';
 import Link from 'next/link';
 
 const IntroSection = ({onProjectClick}) => {
-    const myResume = "/Sudipta-update-cloud-resume.pdf";
+    const myResume = "/Sudipta-Devops-Resume.pdf";
 
     return (
         <Grid container
             maxWidth={'98%'}
         // border={'1px solid orange'}
+        margin={'1rem 0'}
         >
-            <CustomBox  className='rightside-content-wrapper small-device-responsiveness' marginTop="1rem" mb="0.6rem">
+            <CustomBox  className='rightside-content-wrapper small-device-responsiveness'
+            
+            mb="0.6rem"
+            >
 
                 <Grid item size={{ lg: 12, xl: 12 }} >
                     <CustomChip label="Frontend Developer & DevOps Engineer" variant="outlined" />
                 </Grid>
                 <Grid item size={{ xs: 12, lg: 12, xl: 12 }} >
 
-                    <CustomBox mb={"3rem"} fontSize="7xl" gradientLineWidth="10%" className='dev-name'>
+                    <CustomBox   fontSize="8xl" gradientLineWidth="20%" className='dev-name small-device-responsiveness'>
                         <h1 className='typography-main gradient-bar'>
                             Hi, I'm Sudipta Mukherjee.
                         </h1>
@@ -31,7 +35,7 @@ const IntroSection = ({onProjectClick}) => {
 
                     <CustomBox mb={"1rem"}  fontSize="xl" maxWidth="764px" className='short-text'>
                         <h3 className='typography-sub'>
-                            I build elegant UIs & automate DevOps workflows with a focus on performance and user experience.
+                          DevOps enthusiast focused on automation, cloud technologies, CI/CD workflows, and building scalable modern web applications.
                         </h3>
                     </CustomBox>
 

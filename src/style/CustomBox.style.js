@@ -130,6 +130,14 @@ export const CustomBox = styled('div')(({
     fontSize: theme.fonts.sizes['base'],
     marginTop: '0.4rem',
     marginBottom: '0.4rem',
+    textAlign: 'justify',
+"& .highlight": {
+    background: "linear-gradient(90deg, #ff8a00, #ff4d00, #ff6a00)",
+    WebkitBackgroundClip: "text",
+    WebkitTextFillColor: "transparent",
+    fontWeight: 700,
+    textShadow: "0 0 10px rgba(255, 106, 0, 0.28)"
+}
   },
 
   "& .job-title-typography , & .course-name-typography , & .Contact-Information-typography": {
@@ -187,10 +195,10 @@ export const CustomBox = styled('div')(({
     "&.rightside-content-wrapper": {
       padding: '0px',
       // border: '2px solid blue',
-      minHeight: '67vh',
+      minHeight: '40vh',
       display: 'flex',
       flexDirection: 'column',
-      justifyContent: 'space-evenly',
+      justifyContent: 'space-between',
       "& .dev-name":{
         marginBottom:"0px",
       },
@@ -206,6 +214,7 @@ export const CustomBox = styled('div')(({
   },
   // Responsive styles for smaller screens
   '@media screen and (max-width: 600px)': {
+   
     "& .leftSidebar": {
       display: 'none',
     },
@@ -214,6 +223,8 @@ export const CustomBox = styled('div')(({
       flexDirection: 'column',
       alignItems: 'center',
       justifyContent: 'center',
+      marginTop:"1rem" ,
+       marginBottom: '3rem',
     },
     "& .typography-main": {
       fontSize: theme.fonts.sizes["6xl"],
@@ -232,7 +243,7 @@ export const CustomBox = styled('div')(({
       paddingLeft: '1rem',
     },
     "&.skillBox-wrapper , &.projects-wrapper, &.experience-wrapper , &.education-wrapper , &.contactCard-wrapper": {
-      marginLeft: '0.5rem',
+      // marginLeft: '0.5rem',
       
     },
 

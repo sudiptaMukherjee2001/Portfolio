@@ -2,7 +2,7 @@ export const education=[
     {
         courseName:"M.C.A. – Master of Computer Applications",
         instituionName:"Jain University",
-        courseDuration:"2024 - Present",
+        courseDuration:"2024 - 2026",
         specilization: "Specialized in Cloud Computing",
     },
     {
