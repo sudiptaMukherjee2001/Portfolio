@@ -1,11 +1,33 @@
 import img from "../../public/rmimg.png";
 import linkdinUi from "../../public/linkdinUi.png";
 import taskLikho from "../../public/taskLikho.png";
+
 export const projects = [
+   {
+    title: "Zero Downtime Deployment on Kubernetes & AWS",
+    description:
+        "Designed and implemented a <span class='highlight'>highly available cloud-native deployment architecture</span> using <span class='highlight'>Amazon EKS</span> and <span class='highlight'>AWS services</span>.",
+    tags: [
+        "Kubernetes",
+        "Amazon EKS",
+        "AWS",
+        "Prometheus",
+        "Grafana",
+        "CloudWatch",
+        "Route 53",
+        "HPA"
+    ],
+
+    githubUrl: "https://github.com/sudiptaMukherjee2001/Kubernetes-learning/tree/main/service_ingress/domain_based_routing",
+    githubTxt: "Github",
+    url: "https://drive.google.com/file/d/1qPKnnsIKIDWhLaBxmHSnm5r4xJLlMxLx/view?usp=sharing",
+    btnTxt:"View Documentation",
+
+},
     {
         title: "Containerized MEAN Application with CI/CD",
         description:
-            "Deployed a MEAN stack application using Docker containers and automated the deployment with a Jenkins CI/CD pipeline. The application runs on AWS EC2 with Nginx configured as a reverse proxy to route traffic between frontend and backend services.",
+                "Deployed a <span class='highlight'>MEAN stack application</span> using <span class='highlight'>Docker containers</span> and automated the deployment with a <span class='highlight'>Jenkins CI/CD pipeline</span>. The application runs on <span class='highlight'>AWS EC2</span> with <span class='highlight'>Nginx configured as a reverse proxy</span> to route traffic between <span class='highlight'>frontend and backend services</span>.",
         tags: [
             "Docker",
             "Docker Compose",
@@ -17,8 +39,8 @@ export const projects = [
         ],
     
         
-        url: "https://github.com/sudiptaMukherjee2001/containerized-mean-stack-crud",
-        btnTxt:"Github"
+        githubUrl: "https://github.com/sudiptaMukherjee2001/containerized-mean-stack-crud",
+        githubTxt: "Github"
     },
     {
         title: "Serverless EC2 Monitor & Control Dashboard",

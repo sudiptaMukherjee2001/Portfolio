@@ -130,6 +130,14 @@ export const CustomBox = styled('div')(({
     fontSize: theme.fonts.sizes['base'],
     marginTop: '0.4rem',
     marginBottom: '0.4rem',
+    textAlign: 'justify',
+"& .highlight": {
+    background: "linear-gradient(90deg, #ff8a00, #ff4d00, #ff6a00)",
+    WebkitBackgroundClip: "text",
+    WebkitTextFillColor: "transparent",
+    fontWeight: 700,
+    textShadow: "0 0 10px rgba(255, 106, 0, 0.28)"
+}
   },
 
   "& .job-title-typography , & .course-name-typography , & .Contact-Information-typography": {
@@ -235,7 +243,7 @@ export const CustomBox = styled('div')(({
       paddingLeft: '1rem',
     },
     "&.skillBox-wrapper , &.projects-wrapper, &.experience-wrapper , &.education-wrapper , &.contactCard-wrapper": {
-      marginLeft: '0.5rem',
+      // marginLeft: '0.5rem',
       
     },
 

@@ -10,7 +10,7 @@ const Resume = () => {
     return (
 
         <CustomBox className='rightside-content-wrapper' >
-            <Grid container maxWidth={'98%'} spacing={2} >
+            <Grid container columnSpacing={2} rowSpacing={2} spacing={2}  >
 
                 <Grid item size={{ xs: 12, sm: 12, lg: 12, xl: 12 }} >
                     <CustomBox mb={"2rem"} fontSize="4xl" gradientLineWidth="10%">
@@ -38,7 +38,7 @@ const Resume = () => {
                             backgroundColor='rgba(26, 26, 46, 0.6)'
                             backdropFilter='blur(12px)'
                             border='1px solid rgba(74, 74, 138, 0.3)'
-                            padding='20px'
+                            // padding='20px'
                             borderRadius='8px'
                             className='experience-wrapper'
 
@@ -63,16 +63,7 @@ const Resume = () => {
 
                 {/* This grid is showing my Education start */}
                 <Grid item size={{ sm: 6, lg: 6, xl: 6 }}>
-                    {/* <motion.div
-
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.5 }}
-                        viewport={{ once: false, amount: 0.75 }}
-                    > */}
-
-
+                  
                         <CustomBox mb={"2rem"} fontSize="xl">
                             <h1 className='typography-main resume-subHeading-typography'>
                                 Education
