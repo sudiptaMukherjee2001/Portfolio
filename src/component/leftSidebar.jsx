@@ -8,13 +8,19 @@ import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 import Link from 'next/link';
 const LeftSidebar = ({ onContactClick }) => {
   return (
-    <CustomSection display='flex' flexDirection='column' alignItems='center' justifyContent="space-around" maxHeight="100vh" minHeight="100vh"
-    // border="3px solid blue"
+    <CustomSection
+      display='flex'
+  flexDirection='column'
+  alignItems='center'
+  justifyContent="flex-start"
+  minHeight="100vh"
+  paddingTop="8rem"
+  // border="3px solid blue"
     >
       {/* Avatar part start */}
       <CustomBox
-        Width="200px"
-        Height="200px"
+        // Width="200px"
+        // Height="600px"
         border="2px solid #4a4a8a"
         borderRadius='50%'
         overflow="hidden"
@@ -25,7 +31,13 @@ const LeftSidebar = ({ onContactClick }) => {
       </CustomBox>
       {/* Avatar part end */}
 
-      <CustomBox display="flex" flexDirection="column" alignItems="center" padding="1rem">
+      <CustomBox 
+      // border="3px solid #4a4a8a" 
+      display="flex" 
+      flexDirection="column" 
+      alignItems="center"
+      marginTop="2rem"
+      >
 
 
         {/* Name part start */}

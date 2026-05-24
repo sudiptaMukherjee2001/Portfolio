@@ -1,7 +1,7 @@
 import { CustomSec } from '@/style/customSection.style'
 import React from 'react'
 
-const CustomSection = ({children,minHeight,border,display,flexDirection,alignItems,justifyContent}) => {
+const CustomSection = ({children,minHeight,border,display,flexDirection,alignItems,justifyContent,paddingTop}) => {
   return (
     <CustomSec
    
@@ -11,6 +11,7 @@ const CustomSection = ({children,minHeight,border,display,flexDirection,alignIte
     flexDirection={flexDirection}
     alignItems={alignItems}
     justifyContent={justifyContent}
+    paddingTop={paddingTop}
     >{children}</CustomSec>
   )
 }
