@@ -187,10 +187,10 @@ export const CustomBox = styled('div')(({
     "&.rightside-content-wrapper": {
       padding: '0px',
       // border: '2px solid blue',
-      minHeight: '67vh',
+      minHeight: '40vh',
       display: 'flex',
       flexDirection: 'column',
-      justifyContent: 'space-evenly',
+      justifyContent: 'space-between',
       "& .dev-name":{
         marginBottom:"0px",
       },
@@ -206,6 +206,7 @@ export const CustomBox = styled('div')(({
   },
   // Responsive styles for smaller screens
   '@media screen and (max-width: 600px)': {
+   
     "& .leftSidebar": {
       display: 'none',
     },
@@ -214,6 +215,8 @@ export const CustomBox = styled('div')(({
       flexDirection: 'column',
       alignItems: 'center',
       justifyContent: 'center',
+      marginTop:"1rem" ,
+       marginBottom: '3rem',
     },
     "& .typography-main": {
       fontSize: theme.fonts.sizes["6xl"],
