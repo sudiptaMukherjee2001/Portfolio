@@ -14,7 +14,7 @@ const ContactFrom = forwardRef((props,ref) => {
         <CustomBox className='rightside-content-wrapper'
         ref={ref}
         >
-            <Grid container maxWidth={'100%'} justifyContent={"space-between"} >
+            <Grid container maxWidth={'96%'} justifyContent={"space-between"} >
 
                 <Grid item size={{ xs: 11, sm: 12, lg: 12, xl: 12 }} >
                     <CustomBox mb={"2rem"} fontSize="4xl" gradientLineWidth="10%">
