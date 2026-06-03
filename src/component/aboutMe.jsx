@@ -24,7 +24,7 @@ const AboutMe = () => {
                 <Grid item size={{ lg: 12, xl: 12 }} >
                     <CustomBox fontSize="lg" mb={"1rem"} maxWidth="95%" >
                         <h3 className='typography-sub'  >
-                            I love turning ideas into clean, modern UIs and enjoy diving into cloud tools to bring them to life. With a strong interest in frontend and DevOps, I’m always exploring new ways to build smarter and smoother web experiences. Learning is my fuel, and building is my happy place.
+                           I’m passionate about building reliable, scalable, and automated solutions in the cloud. My journey started with frontend development, but over time I became deeply interested in DevOps, cloud infrastructure, and deployment automation. I enjoy working with AWS, Docker, Kubernetes, Terraform, GitHub Actions, and Linux to streamline development workflows and deliver applications efficiently. I’m constantly learning, experimenting, and building projects that help me grow as a DevOps and Cloud Engineer.
                         </h3>
                         {/* <h3 className='typography-sub' >
                             With a strong foundation in modern JavaScript frameworks and cloud technologies, I enjoy solving complex problems and continuously learning new technologies to stay at the forefront of the industry.
