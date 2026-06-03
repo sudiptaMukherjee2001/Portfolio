@@ -101,6 +101,7 @@ export const CustomBox = styled('div')(({
     maxWidth: maxWidth,
     fontSize: theme.fonts.sizes[fontSize],
     marginBottom: paraGap,
+    textAlign: 'justify',
   },
 
   "& .project-card": {
@@ -241,6 +242,7 @@ export const CustomBox = styled('div')(({
     "& .typography-sub": {
       // textAlign: 'center',
       paddingLeft: '1rem',
+      textAlign: 'justify',
     },
     "&.skillBox-wrapper , &.projects-wrapper, &.experience-wrapper , &.education-wrapper , &.contactCard-wrapper": {
       // marginLeft: '0.5rem',
@@ -272,6 +274,7 @@ export const CustomBox = styled('div')(({
     },
     "& .typography-sub": {
       // textAlign: 'center',
+      textAlign: 'justify',
 
     },
     '& .resume-subHeading-typography': {

@@ -20,7 +20,7 @@ const IntroSection = ({onProjectClick}) => {
             >
 
                 <Grid item size={{ lg: 12, xl: 12 }} >
-                    <CustomChip label="Frontend Developer & DevOps Engineer" variant="outlined" />
+                    <CustomChip label="DevOps Engineer & Cloud Enthusiast" variant="outlined" />
                 </Grid>
                 <Grid item size={{ xs: 12, lg: 12, xl: 12 }} >
 

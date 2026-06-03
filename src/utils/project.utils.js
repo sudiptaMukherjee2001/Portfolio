@@ -3,27 +3,46 @@ import linkdinUi from "../../public/linkdinUi.png";
 import taskLikho from "../../public/taskLikho.png";
 
 export const projects = [
-   {
-    title: "Zero Downtime Deployment on Kubernetes & AWS",
-    description:
-        "Designed and implemented a <span class='highlight'>highly available cloud-native deployment architecture</span> using <span class='highlight'>Amazon EKS</span> and <span class='highlight'>AWS services</span>.",
-    tags: [
-        "Kubernetes",
-        "Amazon EKS",
-        "AWS",
-        "Prometheus",
-        "Grafana",
-        "CloudWatch",
-        "Route 53",
-        "HPA"
-    ],
+    {
+        title: "End-to-End CI/CD Pipeline with GitHub Actions",
+        description:
+                "Built a <span class='highlight'>containerized Next.js application</span> using <span class='highlight'>Docker</span> and automated the complete deployment process with a <span class='highlight'>GitHub Actions </span> CI/CD pipeline. The pipeline automatically <span class='highlight'>builds Docker images</span>, <span class='highlight'>pushes images to Docker Hub</span>, and <span class='highlight'>deploys the latest version to AWS EC2 via SSH</span>. Configured <span class='highlight'>Nginx as a reverse proxy</span> and integrated a custom subdomain through <span class='highlight'> Cloudflare DNS</span>, enabling <span class='highlight'>fully automated deployments from code push to production</span>.",
+        tags: [
+            "GitHub Actions",
+            "Docker",
+            "Docker Hub",
+            "AWS EC2",
+            "Nginx",
+            "Cloudflare",
+            "Linux",
+            "CI/CD"
+        ],
+    
+        
+        githubUrl: "https://github.com/sudiptaMukherjee2001/nextjs-github-action-cicd",
+        githubTxt: "Github"
+    },
+    {
+        title: "Zero Downtime Deployment on Kubernetes & AWS",
+        description:
+            "Designed and implemented a <span class='highlight'>highly available cloud-native deployment architecture</span> using <span class='highlight'>Amazon EKS</span> and <span class='highlight'>AWS services</span>.",
+        tags: [
+            "Kubernetes",
+            "Amazon EKS",
+            "AWS",
+            "Prometheus",
+            "Grafana",
+            "CloudWatch",
+            "Route 53",
+            "HPA"
+        ],
 
-    githubUrl: "https://github.com/sudiptaMukherjee2001/Kubernetes-learning/tree/main/service_ingress/domain_based_routing",
-    githubTxt: "Github",
-    url: "https://drive.google.com/file/d/1qPKnnsIKIDWhLaBxmHSnm5r4xJLlMxLx/view?usp=sharing",
-    btnTxt:"View Documentation",
+        githubUrl: "https://github.com/sudiptaMukherjee2001/Kubernetes-learning/tree/main/service_ingress/domain_based_routing",
+        githubTxt: "Github",
+        url: "https://drive.google.com/file/d/1qPKnnsIKIDWhLaBxmHSnm5r4xJLlMxLx/view?usp=sharing",
+        btnTxt:"View Documentation",
 
-},
+    },
     {
         title: "Containerized MEAN Application with CI/CD",
         description:
@@ -59,21 +78,21 @@ export const projects = [
         imageUrl: img,
         btnTxt:"Publication link"
     },
-    {
-        title: "LinkedIn UI Clone",
-        // subtitle: "Real-Time EC2 Monitoring & Automation with AWS",
-        description:
-            "A responsive LinkedIn landing page clone built with HTML and CSS, mimicking the modern design and layout of LinkedIn's homepage.",
-        tags: [
-            "Html",
-            "Css",
-            "Responsive Design",
-        ],
-        url: "https://linkdin-ui-clone.netlify.app/", // Replace with actual deployed project if available
+    // {
+    //     title: "LinkedIn UI Clone",
+    //     // subtitle: "Real-Time EC2 Monitoring & Automation with AWS",
+    //     description:
+    //         "A responsive LinkedIn landing page clone built with HTML and CSS, mimicking the modern design and layout of LinkedIn's homepage.",
+    //     tags: [
+    //         "Html",
+    //         "Css",
+    //         "Responsive Design",
+    //     ],
+    //     url: "https://linkdin-ui-clone.netlify.app/", // Replace with actual deployed project if available
         
-        imageUrl: linkdinUi,
-        btnTxt:"View Demo"
-    },
+    //     imageUrl: linkdinUi,
+    //     btnTxt:"View Demo"
+    // },
     {
         title: "TaskLikho",
         // subtitle: "Real-Time EC2 Monitoring & Automation with AWS",

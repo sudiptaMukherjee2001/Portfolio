@@ -53,7 +53,7 @@ const LeftSidebar = ({ onContactClick }) => {
         {/* Sub text part start */}
         <Box padding="0.5rem" borderRadius="8px">
           <h3 className='subText' >
-            Frontend Developer & DevOps Engineer
+            DevOps Engineer | Cloud Enthusiast
 
           </h3>
         </Box>
