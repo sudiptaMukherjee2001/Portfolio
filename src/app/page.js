@@ -46,6 +46,7 @@ export default function Page() {
           item
           size={{ md: 8, lg: 9 }}
         // sx={{ border: '2px solid yellow' }}
+        
         >
           {/* Right side content  outer box start .. All the section should be inside this outer box*/}
           <CustomBox
@@ -56,6 +57,7 @@ export default function Page() {
             //  border="1px solid red"
             padding=' 0 0 0 0.3rem'
             className='rightside-wrapper'
+           
           >
             <IntroSection onProjectClick={handleScrollToProject}/>
             <AboutMe />

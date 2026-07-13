@@ -10,7 +10,7 @@ const Resume = () => {
     return (
 
         <CustomBox className='rightside-content-wrapper' >
-            <Grid container columnSpacing={2} rowSpacing={2} spacing={2}   maxWidth={'96%'} margin={'0 auto'}  >
+            <Grid container columnSpacing={2} rowSpacing={2} spacing={2}  maxWidth={'96%'} margin={'0 auto'}    >
 
                 <Grid item size={{ xs: 12, sm: 12, lg: 12, xl: 12 }} >
                     <CustomBox mb={"2rem"} fontSize="4xl" gradientLineWidth="10%">

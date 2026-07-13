@@ -253,6 +253,11 @@ export const CustomBox = styled('div')(({
     "& .contact-info-text": {
       fontSize: theme.fonts.sizes['sm'],
     },
+    "&.rightside-wrapper":{
+      // border: '2px solid red',
+       maxWidth: '98%',
+      // margin: '0 auto',
+    },
 
   },
   // -------------------------------------------------
