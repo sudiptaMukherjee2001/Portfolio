@@ -6,13 +6,13 @@ import { Box, Grid } from '@mui/material';
 import Link from 'next/link';
 
 const IntroSection = ({onProjectClick}) => {
-    const myResume = "/Sudipta-Devops-Resume.pdf";
+    const myResume = "/Sudipta_Mukherjee_resume.pdf";
 
     return (
         <Grid container
-            maxWidth={'98%'}
+          maxWidth={'96%'} margin={'1rem auto'}
         // border={'1px solid orange'}
-        margin={'1rem 0'}
+       
         >
             <CustomBox  className='rightside-content-wrapper small-device-responsiveness'
             

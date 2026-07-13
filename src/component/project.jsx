@@ -10,7 +10,8 @@ import { useRef } from "react";
 const Project = forwardRef((props, ref) => {
     return (
         <Grid container
-            maxWidth={'98%'}
+            maxWidth={'96%'} 
+            margin={'0 auto'}
             // border={'1px solid orange'}
             ref={ref}
         >

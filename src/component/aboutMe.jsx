@@ -7,8 +7,9 @@ import { motion } from "framer-motion";
 const AboutMe = () => {
     return (
         <Grid container
-            maxWidth={'98%'}
-        // border={'1px solid orange'}
+            maxWidth={'96%'} 
+            margin={'0 auto'}
+            // border={'1px solid orange'}
         >
             <CustomBox mb="0.8rem" className='rightside-content-wrapper'>
                 {/* Title of about me section start */}
